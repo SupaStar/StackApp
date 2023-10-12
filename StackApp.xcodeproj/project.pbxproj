@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		09F5E8B62AD7871600D293D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8B52AD7871600D293D2 /* AppDelegate.swift */; };
 		09F5E8B82AD7871600D293D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8B72AD7871600D293D2 /* SceneDelegate.swift */; };
-		09F5E8BA2AD7871600D293D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8B92AD7871600D293D2 /* ViewController.swift */; };
+		09F5E8BA2AD7871600D293D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8B92AD7871600D293D2 /* MainViewController.swift */; };
 		09F5E8BD2AD7871600D293D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F5E8BB2AD7871600D293D2 /* Main.storyboard */; };
 		09F5E8C02AD7871600D293D2 /* StackApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8BE2AD7871600D293D2 /* StackApp.xcdatamodeld */; };
 		09F5E8C22AD7871700D293D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09F5E8C12AD7871700D293D2 /* Assets.xcassets */; };
@@ -17,6 +17,14 @@
 		09F5E8D02AD7871700D293D2 /* StackAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8CF2AD7871700D293D2 /* StackAppTests.swift */; };
 		09F5E8DA2AD7871700D293D2 /* StackAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8D92AD7871700D293D2 /* StackAppUITests.swift */; };
 		09F5E8DC2AD7871700D293D2 /* StackAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8DB2AD7871700D293D2 /* StackAppUITestsLaunchTests.swift */; };
+		09F5E8EE2AD788BA00D293D2 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F5E8ED2AD788BA00D293D2 /* Home.storyboard */; };
+		09F5E8F12AD7890900D293D2 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 09F5E8F02AD7890900D293D2 /* Lottie */; };
+		09F5E8F42AD78CFE00D293D2 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8F32AD78CFE00D293D2 /* Constant.swift */; };
+		09F5E8F62AD78DB300D293D2 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8F52AD78DB300D293D2 /* HomeTableViewController.swift */; };
+		09F5E8FA2AD7967D00D293D2 /* TickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8F92AD7967C00D293D2 /* TickerModel.swift */; };
+		09F5E8FD2AD7991B00D293D2 /* TickersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8FC2AD7991B00D293D2 /* TickersRequest.swift */; };
+		09F5E9002AD7A08900D293D2 /* TickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8FF2AD7A08900D293D2 /* TickerViewModel.swift */; };
+		09F5E9032AD7A56200D293D2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 09F5E9022AD7A56200D293D2 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +48,7 @@
 		09F5E8B22AD7871600D293D2 /* StackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F5E8B52AD7871600D293D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09F5E8B72AD7871600D293D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		09F5E8B92AD7871600D293D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09F5E8B92AD7871600D293D2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		09F5E8BC2AD7871600D293D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09F5E8BF2AD7871600D293D2 /* StackApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StackApp.xcdatamodel; sourceTree = "<group>"; };
 		09F5E8C12AD7871700D293D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +59,12 @@
 		09F5E8D52AD7871700D293D2 /* StackAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F5E8D92AD7871700D293D2 /* StackAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackAppUITests.swift; sourceTree = "<group>"; };
 		09F5E8DB2AD7871700D293D2 /* StackAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		09F5E8ED2AD788BA00D293D2 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		09F5E8F32AD78CFE00D293D2 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		09F5E8F52AD78DB300D293D2 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		09F5E8F92AD7967C00D293D2 /* TickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerModel.swift; sourceTree = "<group>"; };
+		09F5E8FC2AD7991B00D293D2 /* TickersRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersRequest.swift; sourceTree = "<group>"; };
+		09F5E8FF2AD7A08900D293D2 /* TickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F5E8F12AD7890900D293D2 /* Lottie in Frameworks */,
+				09F5E9032AD7A56200D293D2 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				09F5E8B42AD7871600D293D2 /* StackApp */,
+				09F5E8C62AD7871700D293D2 /* Info.plist */,
 				09F5E8CE2AD7871700D293D2 /* StackAppTests */,
 				09F5E8D82AD7871700D293D2 /* StackAppUITests */,
 				09F5E8B32AD7871600D293D2 /* Products */,
@@ -101,14 +118,12 @@
 		09F5E8B42AD7871600D293D2 /* StackApp */ = {
 			isa = PBXGroup;
 			children = (
-				09F5E8B52AD7871600D293D2 /* AppDelegate.swift */,
-				09F5E8B72AD7871600D293D2 /* SceneDelegate.swift */,
-				09F5E8B92AD7871600D293D2 /* ViewController.swift */,
-				09F5E8BB2AD7871600D293D2 /* Main.storyboard */,
-				09F5E8C12AD7871700D293D2 /* Assets.xcassets */,
-				09F5E8C32AD7871700D293D2 /* LaunchScreen.storyboard */,
-				09F5E8C62AD7871700D293D2 /* Info.plist */,
-				09F5E8BE2AD7871600D293D2 /* StackApp.xcdatamodeld */,
+				09F5E8E82AD7879400D293D2 /* App */,
+				09F5E8F22AD78CDF00D293D2 /* Utilities */,
+				09F5E8F82AD7964F00D293D2 /* Model */,
+				09F5E8F72AD7964900D293D2 /* Network */,
+				09F5E8EA2AD787BB00D293D2 /* ViewModel */,
+				09F5E8E92AD787B300D293D2 /* View */,
 			);
 			path = StackApp;
 			sourceTree = "<group>";
@@ -130,6 +145,93 @@
 			path = StackAppUITests;
 			sourceTree = "<group>";
 		};
+		09F5E8E82AD7879400D293D2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				09F5E8B52AD7871600D293D2 /* AppDelegate.swift */,
+				09F5E8B72AD7871600D293D2 /* SceneDelegate.swift */,
+				09F5E8C12AD7871700D293D2 /* Assets.xcassets */,
+				09F5E8BE2AD7871600D293D2 /* StackApp.xcdatamodeld */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		09F5E8E92AD787B300D293D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09F5E8EC2AD788A400D293D2 /* Home */,
+				09F5E8EB2AD787C700D293D2 /* Main */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09F5E8EA2AD787BB00D293D2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				09F5E8FE2AD7A07D00D293D2 /* Tickers */,
+				09F5E8B92AD7871600D293D2 /* MainViewController.swift */,
+				09F5E8F52AD78DB300D293D2 /* HomeTableViewController.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		09F5E8EB2AD787C700D293D2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				09F5E8BB2AD7871600D293D2 /* Main.storyboard */,
+				09F5E8C32AD7871700D293D2 /* LaunchScreen.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		09F5E8EC2AD788A400D293D2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				09F5E8ED2AD788BA00D293D2 /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		09F5E8F22AD78CDF00D293D2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				09F5E8F32AD78CFE00D293D2 /* Constant.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		09F5E8F72AD7964900D293D2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				09F5E8FB2AD798E200D293D2 /* Tickers */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		09F5E8F82AD7964F00D293D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09F5E8F92AD7967C00D293D2 /* TickerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09F5E8FB2AD798E200D293D2 /* Tickers */ = {
+			isa = PBXGroup;
+			children = (
+				09F5E8FC2AD7991B00D293D2 /* TickersRequest.swift */,
+			);
+			path = Tickers;
+			sourceTree = "<group>";
+		};
+		09F5E8FE2AD7A07D00D293D2 /* Tickers */ = {
+			isa = PBXGroup;
+			children = (
+				09F5E8FF2AD7A08900D293D2 /* TickerViewModel.swift */,
+			);
+			path = Tickers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +248,10 @@
 			dependencies = (
 			);
 			name = StackApp;
+			packageProductDependencies = (
+				09F5E8F02AD7890900D293D2 /* Lottie */,
+				09F5E9022AD7A56200D293D2 /* Alamofire */,
+			);
 			productName = StackApp;
 			productReference = 09F5E8B22AD7871600D293D2 /* StackApp.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +324,10 @@
 				Base,
 			);
 			mainGroup = 09F5E8A92AD7871600D293D2;
+			packageReferences = (
+				09F5E8EF2AD7890900D293D2 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				09F5E9012AD7A56200D293D2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 09F5E8B32AD7871600D293D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -237,6 +347,7 @@
 				09F5E8C52AD7871700D293D2 /* LaunchScreen.storyboard in Resources */,
 				09F5E8C22AD7871700D293D2 /* Assets.xcassets in Resources */,
 				09F5E8BD2AD7871600D293D2 /* Main.storyboard in Resources */,
+				09F5E8EE2AD788BA00D293D2 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,8 +372,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F5E8F62AD78DB300D293D2 /* HomeTableViewController.swift in Sources */,
 				09F5E8C02AD7871600D293D2 /* StackApp.xcdatamodeld in Sources */,
-				09F5E8BA2AD7871600D293D2 /* ViewController.swift in Sources */,
+				09F5E8FD2AD7991B00D293D2 /* TickersRequest.swift in Sources */,
+				09F5E8FA2AD7967D00D293D2 /* TickerModel.swift in Sources */,
+				09F5E8BA2AD7871600D293D2 /* MainViewController.swift in Sources */,
+				09F5E8F42AD78CFE00D293D2 /* Constant.swift in Sources */,
+				09F5E9002AD7A08900D293D2 /* TickerViewModel.swift in Sources */,
 				09F5E8B62AD7871600D293D2 /* AppDelegate.swift in Sources */,
 				09F5E8B82AD7871600D293D2 /* SceneDelegate.swift in Sources */,
 			);
@@ -449,16 +565,19 @@
 				DEVELOPMENT_TEAM = AZD7B5TZYA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StackApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StackApp;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pruebas.StackApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -477,16 +596,19 @@
 				DEVELOPMENT_TEAM = AZD7B5TZYA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StackApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StackApp;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pruebas.StackApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -611,6 +733,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		09F5E8EF2AD7890900D293D2 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.3.3;
+			};
+		};
+		09F5E9012AD7A56200D293D2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		09F5E8F02AD7890900D293D2 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09F5E8EF2AD7890900D293D2 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+		09F5E9022AD7A56200D293D2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09F5E9012AD7A56200D293D2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		09F5E8BE2AD7871600D293D2 /* StackApp.xcdatamodeld */ = {

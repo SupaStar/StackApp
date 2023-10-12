@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F65241DF-7D5C-4415-A488-5A57851B311C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2486BE71-AE16-42B0-8EF9-BE3637A9870D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/Network/Tickers/IndexTickersRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "loadTickers(limit:offset:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2486BE71-AE16-42B0-8EF9-BE3637A9870D - 22e02daff0a9e3a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StackApp.IndexTickersRequest.loadTickers(limit: Swift.Int, offset: Swift.Int, completion: (Swift.Array&lt;StackApp.TickerModel&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Tickers/IndexTickersRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "1488">
+               </Location>
+               <Location
+                  uuid = "2486BE71-AE16-42B0-8EF9-BE3637A9870D - 6c8342fef3c611be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StackApp.IndexTickersRequest.loadTickers(limit: Swift.Int, offset: Swift.Int, completion: (Swift.Array&lt;StackApp.TickerModel&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Tickers/IndexTickersRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "2486BE71-AE16-42B0-8EF9-BE3637A9870D - 6c8342fef3c611be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StackApp.IndexTickersRequest.loadTickers(limit: Swift.Int, offset: Swift.Int, completion: (Swift.Array&lt;StackApp.TickerModel&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Tickers/IndexTickersRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "196">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "885D6833-2B9B-476E-92C7-3C3597203A68"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/Network/Tickers/IndexTickersRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "loadTickers(limit:offset:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "885D6833-2B9B-476E-92C7-3C3597203A68 - 6c8342fef3c612b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StackApp.IndexTickersRequest.loadTickers(limit: Swift.Int, offset: Swift.Int, completion: (Swift.Array&lt;StackApp.TickerModel&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Tickers/IndexTickersRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "780">
+               </Location>
+               <Location
+                  uuid = "885D6833-2B9B-476E-92C7-3C3597203A68 - 6c8342fef3c612b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StackApp.IndexTickersRequest.loadTickers(limit: Swift.Int, offset: Swift.Int, completion: (Swift.Array&lt;StackApp.TickerModel&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Tickers/IndexTickersRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1256">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C838DC1E-322C-4083-9D7F-EECDA85883EF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/Network/Tickers/IndexTickersRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "loadTickers(limit:offset:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C838DC1E-322C-4083-9D7F-EECDA85883EF - 6c8342fef3c611d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StackApp.IndexTickersRequest.loadTickers(limit: Swift.Int, offset: Swift.Int, completion: (Swift.Array&lt;StackApp.TickerModel&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Tickers/IndexTickersRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "352">
+               </Location>
+               <Location
+                  uuid = "C838DC1E-322C-4083-9D7F-EECDA85883EF - 6c8342fef3c611d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StackApp.IndexTickersRequest.loadTickers(limit: Swift.Int, offset: Swift.Int, completion: (Swift.Array&lt;StackApp.TickerModel&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Tickers/IndexTickersRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "812">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF847BB1-4C31-4714-B072-AA151A2D9FB6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/Network/Tickers/IndexTickersRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "loadTickers(limit:offset:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CF847BB1-4C31-4714-B072-AA151A2D9FB6 - 6c8342fef3c611fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StackApp.IndexTickersRequest.loadTickers(limit: Swift.Int, offset: Swift.Int, completion: (Swift.Array&lt;StackApp.TickerModel&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Tickers/IndexTickersRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  uuid = "CF847BB1-4C31-4714-B072-AA151A2D9FB6 - 6c8342fef3c611fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StackApp.IndexTickersRequest.loadTickers(limit: Swift.Int, offset: Swift.Int, completion: (Swift.Array&lt;StackApp.TickerModel&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Tickers/IndexTickersRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "740">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A4527A64-E84F-424A-9B79-C71E76AC41C1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/Network/Tickers/IndexTickersRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "loadTickers(limit:offset:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A4527A64-E84F-424A-9B79-C71E76AC41C1 - 6c8342fef3c61157"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StackApp.IndexTickersRequest.loadTickers(limit: Swift.Int, offset: Swift.Int, completion: (Swift.Array&lt;StackApp.TickerModel&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Tickers/IndexTickersRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "704">
+               </Location>
+               <Location
+                  uuid = "A4527A64-E84F-424A-9B79-C71E76AC41C1 - 6c8342fef3c61157"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StackApp.IndexTickersRequest.loadTickers(limit: Swift.Int, offset: Swift.Int, completion: (Swift.Array&lt;StackApp.TickerModel&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Tickers/IndexTickersRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "960">
+               </Location>
+               <Location
+                  uuid = "A4527A64-E84F-424A-9B79-C71E76AC41C1 - 6c8342fef3c61157"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StackApp.IndexTickersRequest.loadTickers(limit: Swift.Int, offset: Swift.Int, completion: (Swift.Array&lt;StackApp.TickerModel&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Tickers/IndexTickersRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "1244">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "81680C2E-A3BA-4123-A828-2A2CB71A9019"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/HomeTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "loadTickers()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "81680C2E-A3BA-4123-A828-2A2CB71A9019 - 5c66b299624d06a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StackApp.HomeTableViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/HomeTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "81680C2E-A3BA-4123-A828-2A2CB71A9019 - 58e65e3d3cd7db02"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StackApp.HomeTableViewController.loadTickers() -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/HomeTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "81680C2E-A3BA-4123-A828-2A2CB71A9019 - 58e65e3d3cd7d933"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StackApp.HomeTableViewController.loadTickers() -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/HomeTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EA799D09-85EA-4ED1-86E2-20DBC347AA1A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/Tickers/TickerViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "requestTickers(limit:offset:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EA799D09-85EA-4ED1-86E2-20DBC347AA1A - e5028f363a5cebd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;StackApp.TickerModel&gt;, Swift.String) -&gt; () in StackApp.TickerViewModel.requestTickers(limit: Swift.Int, offset: Swift.Int) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/Tickers/TickerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "276">
+               </Location>
+               <Location
+                  uuid = "EA799D09-85EA-4ED1-86E2-20DBC347AA1A - e5028f363a5ce5a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;StackApp.TickerModel&gt;, Swift.String) -&gt; () in StackApp.TickerViewModel.requestTickers(limit: Swift.Int, offset: Swift.Int) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/Tickers/TickerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "304">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8454400D-B656-4A77-A74C-CAA23B05A429"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/Tickers/TickerViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "requestTickers(limit:offset:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8454400D-B656-4A77-A74C-CAA23B05A429 - 2d8e4437483b1b99"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StackApp.TickerViewModel.requestTickers(limit: Swift.Int, offset: Swift.Int) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/Tickers/TickerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "8454400D-B656-4A77-A74C-CAA23B05A429 - e5028f363a5cdf7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;StackApp.TickerModel&gt;, Swift.String) -&gt; () in StackApp.TickerViewModel.requestTickers(limit: Swift.Int, offset: Swift.Int) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/Tickers/TickerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "8454400D-B656-4A77-A74C-CAA23B05A429 - e5028f363a5cd94"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;StackApp.TickerModel&gt;, Swift.String) -&gt; () in StackApp.TickerViewModel.requestTickers(limit: Swift.Int, offset: Swift.Int) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/Tickers/TickerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "184A9C44-2BB3-4E2F-BA2D-D8472B4D63FE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/HomeTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "loadTickers()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "184A9C44-2BB3-4E2F-BA2D-D8472B4D63FE - 5c66b299624d06a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StackApp.HomeTableViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/HomeTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "184A9C44-2BB3-4E2F-BA2D-D8472B4D63FE - ebff3e7c7f4b27c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in StackApp.HomeTableViewController.loadTickers() -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/HomeTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "184A9C44-2BB3-4E2F-BA2D-D8472B4D63FE - ebff3e7c7f4b27c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in StackApp.HomeTableViewController.loadTickers() -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/HomeTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F7CAD235-21A8-44AA-B8BE-4FD7AD63D246"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/HomeTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "loadTickers()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D2BCE3E4-AC13-4EB8-8408-4B2D9CBFFE9A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/Network/Tickers/TickersRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "loadTickers(limit:offset:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B0D193AD-D915-44E1-8627-F06407266DFB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/Network/Tickers/TickersRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "loadTickers(limit:offset:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0B967368-9DA1-48DC-A5AC-6B01838926A4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/Tickers/TickerViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "requestTickers(limit:offset:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0B967368-9DA1-48DC-A5AC-6B01838926A4 - 2d8e4437483b1bdb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StackApp.TickerViewModel.requestTickers(limit: Swift.Int, offset: Swift.Int) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/Tickers/TickerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "0B967368-9DA1-48DC-A5AC-6B01838926A4 - e5028f363a5cdb5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;StackApp.TickerModel&gt;, Swift.String) -&gt; () in StackApp.TickerViewModel.requestTickers(limit: Swift.Int, offset: Swift.Int) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/Tickers/TickerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2F61AF33-DBCC-4628-A2DD-2D63DFA7E38D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/Tickers/TickerViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "requestTickers(limit:offset:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2F61AF33-DBCC-4628-A2DD-2D63DFA7E38D - 7877e1a17604528"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 0 of StackApp.TickerViewModel.requestTickers(limit: Swift.Int, offset: Swift.Int) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/Tickers/TickerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "2F61AF33-DBCC-4628-A2DD-2D63DFA7E38D - 549e7c360699429"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 1 of StackApp.TickerViewModel.requestTickers(limit: Swift.Int, offset: Swift.Int) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/Tickers/TickerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "2F61AF33-DBCC-4628-A2DD-2D63DFA7E38D - 2d8e4437483b1b3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StackApp.TickerViewModel.requestTickers(limit: Swift.Int, offset: Swift.Int) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/Tickers/TickerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DFD999CD-28AF-486A-A90A-9FBC9C857DB9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/HomeTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DFD999CD-28AF-486A-A90A-9FBC9C857DB9 - 5f72db3670a0c368"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StackApp.HomeTableViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/HomeTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "880">
+               </Location>
+               <Location
+                  uuid = "DFD999CD-28AF-486A-A90A-9FBC9C857DB9 - 5f72db3670a0c32e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StackApp.HomeTableViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/HomeTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "356">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F904A5B4-02FE-434C-B370-EE9124A0758D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/HomeTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9EBAB72C-11F0-4A39-8628-13ADB3CA7DF6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/HomeTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "scrollViewDidScroll(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A21B6132-7BF7-44D7-BCA8-76772485C16C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/HomeTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "loadTickers()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1B910146-A7F6-42A7-AB01-A34EAB05959B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/HomeTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "hideLoader()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
