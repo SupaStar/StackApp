@@ -15,6 +15,10 @@ class TickerViewModel {
         didSet { self.didFinishFetch?() }
     }
     
+    var tickersCloses: [TickerClosesModel]? {
+        didSet { self.didFinishFetch?() }
+    }
+    
     private var tickersRequest: TickersRequest?
     
     var errorMessage: String? = ""{
@@ -46,6 +50,18 @@ class TickerViewModel {
             }
             self.isLoading = false
             self.tickers = tickers
+        })
+    }
+    
+    func requestCloses(symbols: String){
+        self.tickersRequest?.getTickersClose(symbols: symbols, completion: { closes, errorMessage in
+            if errorMessage != "" {
+                self.errorMessage = errorMessage
+                self.isLoading = false
+                return
+            }
+            self.isLoading = false
+            self.tickersCloses = closes
         })
     }
 }

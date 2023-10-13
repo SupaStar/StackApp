@@ -31,6 +31,7 @@ struct TickerModel: Decodable {
     var name: String
     var symbol: String
     var stock_exchange: StockExchange
+    var closes: Double?
     
     enum CodingKeys: String, CodingKey {
         case name = "name"

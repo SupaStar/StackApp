@@ -33,7 +33,7 @@ class HomeTableViewController: UITableViewController {
     @objc func hideLoader(){
         var delayTime = 1.0
         if self.tickers.count > 100 {
-            delayTime = 3.0
+            delayTime = 1.0
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + delayTime, execute: {
             self.tableView.tableFooterView = nil
@@ -49,19 +49,47 @@ class HomeTableViewController: UITableViewController {
         self.tickerVM.requestTickers(limit: self.limit, offset: self.offset)
         self.tickerVM.didFinishFetch = {
             self.tickers = self.tickerVM.tickers ?? []
+            // MARK: Uncoment if you wish view close prices, this petition spend a lot of credits
+//            self.loadClosesPrices()
             self.hideLoader()
         }
         self.tickerVM.updateLoadingStatus = {
-            //            Loader.hide(for: self.view)
+            self.loader.hide()
         }
         self.tickerVM.showAlertClosure = {
+            self.hideLoader()
             if let message = self.tickerVM.errorMessage {
                 if message != "" {
-                    //                    CommonUtils.alert(message: message, title: "Ha ocurrido un error", origin: self)
+                    CommonUtils.alert(message: message, title: "Error", origin: self)
                 }
             }
         }
     }
+    
+    func loadClosesPrices(){
+        let symbols = self.makeSymbolsToPetition()
+        self.tickerVM.requestCloses(symbols: symbols)
+        self.tickerVM.didFinishFetch = {
+            self.tickers.enumerated().forEach { (index, ticker) in
+                if let close = self.tickerVM.tickersCloses?.first(where: { $0.symbol == ticker.symbol }) {
+                    self.tickers[index].closes = close.close
+                }
+            }
+            self.hideLoader()
+        }
+        self.tickerVM.updateLoadingStatus = {
+            self.loader.hide()
+        }
+        self.tickerVM.showAlertClosure = {
+            self.hideLoader()
+            if let message = self.tickerVM.errorMessage {
+                if message != "" {
+                    CommonUtils.alert(message: message, title: "Error", origin: self)
+                }
+            }
+        }
+    }
+    
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -73,16 +101,19 @@ class HomeTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row == 0 {
+            return UITableViewCell()
+        }
         let cell = tableView.dequeueReusableCell(withIdentifier: "TickerVC", for: indexPath) as! TickerTableViewCell
         cell.ticker = tickers[indexPath.row]
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if tableView.tag == 0 {
-            return 75
+        if indexPath.row == 0 {
+            return 30
         }
-        return 30
+        return 75
     }
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetY = scrollView.contentOffset.y
@@ -100,7 +131,10 @@ class HomeTableViewController: UITableViewController {
             }
         }
     }
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! TickerTableViewCell
+        print(cell.ticker)
+    }
     // Make the spinner for the end of the table
     private func createSpinnerFooter() -> UIView {
         let footerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 100))
@@ -112,5 +146,11 @@ class HomeTableViewController: UITableViewController {
         spinner.startAnimating()
         
         return footerView
+    }
+    
+    private func makeSymbolsToPetition() -> String {
+        let symbolsArray = tickers[offset..<limit].map { $0.symbol }
+        let symbolsString = symbolsArray.joined(separator: ",")
+        return symbolsString
     }
 }

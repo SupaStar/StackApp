@@ -24,6 +24,9 @@ class TickerTableViewCell: UITableViewCell {
             nameLbl.text = ticker?.name
             stockAcronymLbl.text = ticker?.stock_exchange.acronym
             stockCountyLbl.text = ticker?.stock_exchange.country
+            if let closes = ticker?.closes {
+                self.closeLbl.text = "\(closes)"
+            }
         }
     }
     override func awakeFromNib() {

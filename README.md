@@ -17,3 +17,8 @@ Reglas de desarrollo
 
 - Swift 16.0 o superior
 - Xcode 15.0 o superior (ya que es la version en la que se genero la app)
+
+**Importante:**
+
+   - Ten en cuenta que el consumo de los precios de cierre de las acciones en el índice está desactivado por defecto debido a limitaciones de peticiones. 
+   - Si deseas habilitar esta función, descomenta la función `loadClosesPrices` y comenta la función `hideLoader`. Estas funciones se encuentran dentro de la función `loadTickers`.

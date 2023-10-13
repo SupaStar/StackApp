@@ -8,9 +8,10 @@
 
 
 import Foundation
+import UIKit
 
 // API
-let apiKey = "2c8008f343e596c967f98d6982cfbc95"
+let apiKey = "37b509e45739dc73e7441465c15f39e6"
 let apiURL = "http://api.marketstack.com/v1/"
 
 func makeURL(method: String, parameters: [String:String]) -> URL? {
@@ -28,3 +29,16 @@ func makeURL(method: String, parameters: [String:String]) -> URL? {
         return nil
     }
 }
+
+// DEVICE
+func getDeviceUUID() -> String {
+    if let uuid = UIDevice.current.identifierForVendor?.uuidString {
+        return uuid
+    } else {
+        // En caso de que no se pueda obtener el UUID del dispositivo
+        return "No se pudo obtener el UUID"
+    }
+}
+
+// UX
+

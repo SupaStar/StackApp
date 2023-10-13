@@ -8,6 +8,7 @@
 
 
 import UIKit
+import FirebaseAnalytics
 
 class MainViewController: UIViewController {
 
@@ -23,7 +24,9 @@ class MainViewController: UIViewController {
     }
 
     @IBAction func goHome(_ sender: Any) {
+        Analytics.logEvent("Inicio", parameters: ["idDevice":"\(getDeviceUUID())"])
         performSegue(withIdentifier: "goToHome", sender: self)
     }
+    
 }
 
