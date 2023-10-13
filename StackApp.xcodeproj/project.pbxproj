@@ -15,9 +15,9 @@
 		095073FA2AD8CF6B007DC97A /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 095073F92AD8CF6B007DC97A /* FirebaseAnalyticsSwift */; };
 		095073FC2AD8CF6B007DC97A /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 095073FB2AD8CF6B007DC97A /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		095073FE2AD8CF6B007DC97A /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 095073FD2AD8CF6B007DC97A /* FirebaseAppCheck */; };
-		095074002AD8D070007DC97A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 095073FF2AD8D070007DC97A /* GoogleService-Info.plist */; };
 		095074022AD8DADD007DC97A /* TickerClosesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095074012AD8DADD007DC97A /* TickerClosesModel.swift */; };
 		095074042AD8E559007DC97A /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095074032AD8E559007DC97A /* CommonUtils.swift */; };
+		095074062AD8EBEC007DC97A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 095074052AD8EBEC007DC97A /* GoogleService-Info.plist */; };
 		09F5E8B62AD7871600D293D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8B52AD7871600D293D2 /* AppDelegate.swift */; };
 		09F5E8B82AD7871600D293D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8B72AD7871600D293D2 /* SceneDelegate.swift */; };
 		09F5E8BA2AD7871600D293D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8B92AD7871600D293D2 /* MainViewController.swift */; };
@@ -58,9 +58,9 @@
 		095073EB2AD86B8B007DC97A /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		095073EE2AD86DE4007DC97A /* snap_loader_white.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = snap_loader_white.gif; path = StackApp/snap_loader_white.gif; sourceTree = SOURCE_ROOT; };
 		095073F22AD89711007DC97A /* TickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerTableViewCell.swift; sourceTree = "<group>"; };
-		095073FF2AD8D070007DC97A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		095074012AD8DADD007DC97A /* TickerClosesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerClosesModel.swift; sourceTree = "<group>"; };
 		095074032AD8E559007DC97A /* CommonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		095074052AD8EBEC007DC97A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		09F5E8B22AD7871600D293D2 /* StackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F5E8B52AD7871600D293D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09F5E8B72AD7871600D293D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 		09F5E8B42AD7871600D293D2 /* StackApp */ = {
 			isa = PBXGroup;
 			children = (
-				095073FF2AD8D070007DC97A /* GoogleService-Info.plist */,
+				095074052AD8EBEC007DC97A /* GoogleService-Info.plist */,
 				09F5E8E82AD7879400D293D2 /* App */,
 				09F5E8F22AD78CDF00D293D2 /* Utilities */,
 				09F5E8F82AD7964F00D293D2 /* Model */,
@@ -387,7 +387,7 @@
 				095073EF2AD86DE4007DC97A /* snap_loader_white.gif in Resources */,
 				09F5E8BD2AD7871600D293D2 /* Main.storyboard in Resources */,
 				09F5E8EE2AD788BA00D293D2 /* Home.storyboard in Resources */,
-				095074002AD8D070007DC97A /* GoogleService-Info.plist in Resources */,
+				095074062AD8EBEC007DC97A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

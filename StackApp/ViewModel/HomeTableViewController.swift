@@ -8,6 +8,7 @@
 
 
 import UIKit
+import FirebaseAnalytics
 
 class HomeTableViewController: UITableViewController {
     
@@ -45,7 +46,7 @@ class HomeTableViewController: UITableViewController {
     
     func loadTickers(){
         loader.show(in: self)
-        
+        Analytics.logEvent("Carga de tickers", parameters: ["fecha":"\(Date())"])
         self.tickerVM.requestTickers(limit: self.limit, offset: self.offset)
         self.tickerVM.didFinishFetch = {
             self.tickers = self.tickerVM.tickers ?? []
@@ -67,6 +68,7 @@ class HomeTableViewController: UITableViewController {
     }
     
     func loadClosesPrices(){
+        Analytics.logEvent("Carga de precios de cierre", parameters: ["fecha":"\(Date())"])
         let symbols = self.makeSymbolsToPetition()
         self.tickerVM.requestCloses(symbols: symbols)
         self.tickerVM.didFinishFetch = {
@@ -134,6 +136,7 @@ class HomeTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as! TickerTableViewCell
         print(cell.ticker)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     // Make the spinner for the end of the table
     private func createSpinnerFooter() -> UIView {
