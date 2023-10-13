@@ -14,7 +14,8 @@ class HomeTableViewController: UITableViewController {
     // MARK: INJECTIONS
     var tickerVM: TickerViewModel = TickerViewModel(dataService: TickersRequest())
     var tickers: [TickerModel] = []
-    
+    let loader = Loader()
+
     var numberPetitions = 1
     var limit: Int = 100
     var offset: Int = 0
@@ -30,18 +31,21 @@ class HomeTableViewController: UITableViewController {
     }
     
     @objc func hideLoader(){
-        var delayTime = 0.0
+        var delayTime = 1.0
         if self.tickers.count > 100 {
-            delayTime = 2.0
+            delayTime = 3.0
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + delayTime, execute: {
             self.tableView.tableFooterView = nil
             self.tableView.reloadData()
             self.numberPetitions = 0
+            self.loader.hide()
         })
     }
     
     func loadTickers(){
+        loader.show(in: self)
+        
         self.tickerVM.requestTickers(limit: self.limit, offset: self.offset)
         self.tickerVM.didFinishFetch = {
             self.tickers = self.tickerVM.tickers ?? []
@@ -61,21 +65,25 @@ class HomeTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return tickers.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Ticker", for: indexPath)
-        cell.textLabel?.text = tickers[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TickerVC", for: indexPath) as! TickerTableViewCell
+        cell.ticker = tickers[indexPath.row]
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if tableView.tag == 0 {
+            return 75
+        }
+        return 30
+    }
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetY = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height
