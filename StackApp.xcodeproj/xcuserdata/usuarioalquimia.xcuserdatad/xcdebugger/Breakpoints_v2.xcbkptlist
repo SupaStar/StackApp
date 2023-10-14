@@ -1333,8 +1333,8 @@
             filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "loadChartExample()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1397,8 +1397,8 @@
             filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "loadStock(ticker:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1413,8 +1413,8 @@
             filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "loadStock(ticker:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1429,8 +1429,8 @@
             filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "loadStock(ticker:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1445,8 +1445,8 @@
             filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "getHistoricalData(symbol:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1712,8 +1712,8 @@
             filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "getHistoricalData(symbol:)"
             landmarkType = "7">
             <Locations>
@@ -1760,8 +1760,8 @@
             filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "loadStock(ticker:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1776,8 +1776,8 @@
             filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "loadStock(ticker:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1792,9 +1792,73 @@
             filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "hideLoader()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2FB3B717-893C-4623-946C-3BEC9F8B14A0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "changeChart(action:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9C48E49B-D7BB-4D6E-971F-1566D604BF52"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "loadFilterChartOptions()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9DF9394E-331E-404E-9980-41F1143D2320"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "drawChart()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "54178B9D-CCD0-42C4-8132-B9A1D2CD5D89"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "drawChart()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

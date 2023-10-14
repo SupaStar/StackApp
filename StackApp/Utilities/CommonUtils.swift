@@ -39,4 +39,18 @@ final class CommonUtils {
             return nil
         }
     }
+    static func formatDateStringShort(date:String) -> String? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        if let date = dateFormatter.date(from: date) {
+            let outputDateFormatter = DateFormatter()
+            outputDateFormatter.dateFormat = "MM-dd"
+            
+            let formattedDate = outputDateFormatter.string(from: date)
+            
+            return formattedDate
+        } else {
+            return nil
+        }
+    }
 }

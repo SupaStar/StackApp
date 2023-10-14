@@ -13,6 +13,10 @@ class DetailViewController: UIViewController {
     // MARK: Variables
     var ticker: TickerModel?
     var historical: [HistoricalModel] = []
+    let loader = Loader()
+    let options: [OptionFilterEnum] = [.open, .close, .high, .low, .volume]
+    var dates: [String] = []
+    var yValues: [Double] = []
     
     // MARK: Components
     @IBOutlet weak var tickerNameLbl: UILabel!
@@ -26,11 +30,12 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var highPriceLbl: UILabel!
     @IBOutlet weak var lowPriceLbl: UILabel!
     @IBOutlet weak var volumeLbl: UILabel!
+    @IBOutlet weak var filterMenuBtn: UIButton!
+    @IBOutlet weak var chartView: UIView!
     
     // MARK: Injections
     var detailVM: DetailRequestViewModel = DetailRequestViewModel(dataService: DetailRequest())
-    let loader = Loader()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,6 +44,57 @@ class DetailViewController: UIViewController {
         } else{
             print("regresar")
         }
+    }
+    
+    func changeChart(action: UIAction){
+        if let selectedOption = OptionFilterEnum(rawValue: action.title) {
+            switch selectedOption {
+            case .open:
+                self.yValues = historical.map{$0.adj_open}
+            case .close:
+                self.yValues = historical.map{$0.adj_close}
+            case .high:
+                self.yValues = historical.map{$0.adj_high}
+            case .volume:
+                self.yValues = historical.map{$0.adj_volume}
+            case .low:
+                self.yValues = historical.map{$0.adj_low}
+            }
+            self.drawChart()
+        }
+    }
+    
+    func drawChart() {
+        let chartHeight = chartView.frame.height
+        let chartWidth = chartView.frame.width
+        let chartX = chartView.frame.minX
+        let chartY = chartView.frame.minY
+        let chart = ChartView(frame: CGRect(x: chartX, y: chartY, width: chartWidth, height: chartHeight))
+        chart.x = self.dates
+        chart.y = self.yValues
+        chartView.addSubview(chart)
+    }
+    
+    // MARK: Make the drop down menu
+    func loadFilterChartOptions(){
+        var optionsArray = [UIAction]()
+        for country in options {
+            let action = UIAction(title: country.rawValue, state: .off, handler: self.changeChart)
+            
+            optionsArray.append(action)
+        }
+        optionsArray[0].state = .on
+        let optionsMenu = UIMenu(title: "", options: .displayInline, children: optionsArray)
+        filterMenuBtn.menu = optionsMenu
+        filterMenuBtn.changesSelectionAsPrimaryAction = true
+        filterMenuBtn.showsMenuAsPrimaryAction = true
+        
+        //First chart
+        self.dates = historical.map {
+            CommonUtils.formatDateStringShort(date: $0.date) ?? ""
+        }
+        self.yValues = historical.map{$0.adj_open}
+        self.drawChart()
     }
     
     func hideLoader(){
@@ -71,6 +127,7 @@ class DetailViewController: UIViewController {
                 self.highPriceLbl.text = "\(today.adj_high)"
                 self.lowPriceLbl.text = "\(today.adj_low)"
                 self.volumeLbl.text = "\(today.adj_volume)"
+                self.loadFilterChartOptions()
             }
             self.hideLoader()
         }
@@ -89,6 +146,11 @@ class DetailViewController: UIViewController {
         //        barChartView.frame = CGRect(x: 20, y: 100, width: 300, height: 200)
         //        view.addSubview(barChartView)
     }
+    
+    func selectedOption(){
+        
+    }
+    
     /*
      // MARK: - Navigation
      

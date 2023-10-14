@@ -18,6 +18,7 @@
 		095074022AD8DADD007DC97A /* TickerClosesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095074012AD8DADD007DC97A /* TickerClosesModel.swift */; };
 		095074042AD8E559007DC97A /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095074032AD8E559007DC97A /* CommonUtils.swift */; };
 		095074062AD8EBEC007DC97A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 095074052AD8EBEC007DC97A /* GoogleService-Info.plist */; };
+		096B14762ADB1195006496BD /* OptionFilterEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096B14752ADB1195006496BD /* OptionFilterEnum.swift */; };
 		09F5E8B62AD7871600D293D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8B52AD7871600D293D2 /* AppDelegate.swift */; };
 		09F5E8B82AD7871600D293D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8B72AD7871600D293D2 /* SceneDelegate.swift */; };
 		09F5E8BA2AD7871600D293D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8B92AD7871600D293D2 /* MainViewController.swift */; };
@@ -66,6 +67,7 @@
 		095074012AD8DADD007DC97A /* TickerClosesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerClosesModel.swift; sourceTree = "<group>"; };
 		095074032AD8E559007DC97A /* CommonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
 		095074052AD8EBEC007DC97A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		096B14752ADB1195006496BD /* OptionFilterEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionFilterEnum.swift; sourceTree = "<group>"; };
 		09F5E8B22AD7871600D293D2 /* StackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F5E8B52AD7871600D293D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09F5E8B72AD7871600D293D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,14 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		096B14742ADB1185006496BD /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				096B14752ADB1195006496BD /* OptionFilterEnum.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 		09F5E8A92AD7871600D293D2 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +168,7 @@
 			children = (
 				095074052AD8EBEC007DC97A /* GoogleService-Info.plist */,
 				09F5E8E82AD7879400D293D2 /* App */,
+				096B14742ADB1185006496BD /* Enum */,
 				09F5E8F22AD78CDF00D293D2 /* Utilities */,
 				09F5E8F82AD7964F00D293D2 /* Model */,
 				095073ED2AD86DCF007DC97A /* Assets */,
@@ -468,6 +479,7 @@
 				09FC13122ADA224B0013313B /* Chart.swift in Sources */,
 				095073EC2AD86B8B007DC97A /* Loader.swift in Sources */,
 				09F5E8BA2AD7871600D293D2 /* MainViewController.swift in Sources */,
+				096B14762ADB1195006496BD /* OptionFilterEnum.swift in Sources */,
 				095074022AD8DADD007DC97A /* TickerClosesModel.swift in Sources */,
 				09F5E8F42AD78CFE00D293D2 /* Constant.swift in Sources */,
 				09FC13172ADA36710013313B /* DetailRequestViewModel.swift in Sources */,
