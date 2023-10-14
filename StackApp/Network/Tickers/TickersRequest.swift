@@ -43,7 +43,6 @@ class TickersRequest {
                     completion([], "Error desconocido")
                 }
             }
-            
         }
     }
     
@@ -79,6 +78,6 @@ class TickersRequest {
             }
             
         }
-
+        
     }
 }

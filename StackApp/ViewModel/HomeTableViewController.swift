@@ -13,13 +13,15 @@ import FirebaseAnalytics
 class HomeTableViewController: UITableViewController {
     
     // MARK: INJECTIONS
-    var tickerVM: TickerViewModel = TickerViewModel(dataService: TickersRequest())
+    var tickerVM: TickerRequestViewModel = TickerRequestViewModel(dataService: TickersRequest())
     var tickers: [TickerModel] = []
     let loader = Loader()
 
+    // MARK: Variables
     var numberPetitions = 1
     var limit: Int = 100
     var offset: Int = 0
+    var selectedTicker: TickerModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -135,8 +137,9 @@ class HomeTableViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as! TickerTableViewCell
-        print(cell.ticker)
+        selectedTicker = cell.ticker
         tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "trackDetail", sender: self)
     }
     // Make the spinner for the end of the table
     private func createSpinnerFooter() -> UIView {
@@ -155,5 +158,13 @@ class HomeTableViewController: UITableViewController {
         let symbolsArray = tickers[offset..<limit].map { $0.symbol }
         let symbolsString = symbolsArray.joined(separator: ",")
         return symbolsString
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "trackDetail" {
+            if let destinationVC = segue.destination as? DetailViewController {
+                destinationVC.ticker = selectedTicker
+            }
+        }
     }
 }

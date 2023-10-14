@@ -395,8 +395,8 @@
             filePath = "StackApp/ViewModel/HomeTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "loadTickers()"
             landmarkType = "7">
             <Locations>
@@ -458,25 +458,9 @@
             filePath = "StackApp/ViewModel/HomeTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "loadTickers()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D2BCE3E4-AC13-4EB8-8408-4B2D9CBFFE9A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StackApp/Network/Tickers/TickersRequest.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "loadTickers(limit:offset:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -617,8 +601,8 @@
             filePath = "StackApp/ViewModel/HomeTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
             <Locations>
@@ -665,8 +649,8 @@
             filePath = "StackApp/ViewModel/HomeTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "scrollViewDidScroll(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -681,8 +665,8 @@
             filePath = "StackApp/ViewModel/HomeTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "hideLoader()"
             landmarkType = "7">
          </BreakpointContent>
@@ -697,8 +681,8 @@
             filePath = "StackApp/ViewModel/HomeTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "loadTickers()"
             landmarkType = "7">
          </BreakpointContent>
@@ -713,8 +697,8 @@
             filePath = "StackApp/ViewModel/HomeTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -729,8 +713,8 @@
             filePath = "StackApp/ViewModel/HomeTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "hideLoader()"
             landmarkType = "7">
          </BreakpointContent>
@@ -745,8 +729,8 @@
             filePath = "StackApp/ViewModel/HomeTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "tableView(_:heightForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -755,22 +739,6 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "06AA2400-5E9E-4B48-BD01-65F362D24E7D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StackApp/ViewModel/HomeTableViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
-            landmarkName = "tableView(_:heightForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8E0AA5F9-3F90-48DD-8EDF-07C58A64F243"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -786,6 +754,22 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "8E0AA5F9-3F90-48DD-8EDF-07C58A64F243"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/HomeTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "tableView(_:heightForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             uuid = "443353D4-2D4C-4427-B7AD-9A1FCFC5FB40"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -793,8 +777,8 @@
             filePath = "StackApp/ViewModel/HomeTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
             <Locations>
@@ -841,8 +825,8 @@
             filePath = "StackApp/ViewModel/HomeTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
             <Locations>
@@ -889,8 +873,8 @@
             filePath = "StackApp/ViewModel/HomeTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
             <Locations>
@@ -937,8 +921,8 @@
             filePath = "StackApp/ViewModel/HomeTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
             landmarkName = "makeSymbolsToPetition()"
             landmarkType = "7">
             <Locations>
@@ -1000,8 +984,8 @@
             filePath = "StackApp/Network/Tickers/TickersRequest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "getTickersClose(symbols:completion:)"
             landmarkType = "7">
             <Locations>
@@ -1078,8 +1062,8 @@
             filePath = "StackApp/Network/Tickers/TickersRequest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "getTickersClose(symbols:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1126,8 +1110,8 @@
             filePath = "StackApp/Network/Tickers/TickersRequest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "getTickersClose(symbols:completion:)"
             landmarkType = "7">
             <Locations>
@@ -1189,8 +1173,8 @@
             filePath = "StackApp/Network/Tickers/TickersRequest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "getTickersClose(symbols:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1205,8 +1189,8 @@
             filePath = "StackApp/Network/Tickers/TickersRequest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "getTickersClose(symbols:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1221,8 +1205,8 @@
             filePath = "StackApp/Network/Tickers/TickersRequest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "getTickersClose(symbols:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1237,8 +1221,8 @@
             filePath = "StackApp/Network/Tickers/TickersRequest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "getTickersClose(symbols:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1269,8 +1253,8 @@
             filePath = "StackApp/Network/Tickers/TickersRequest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "getTickersClose(symbols:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1279,6 +1263,22 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "BAA5C1CE-C14A-45F0-AB1F-0E04B233BF94"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/HomeTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "loadClosesPrices()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1B1F2ED1-CE2C-43EC-BD66-0729FAE46B7B"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -1294,22 +1294,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1B1F2ED1-CE2C-43EC-BD66-0729FAE46B7B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StackApp/ViewModel/HomeTableViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "loadClosesPrices()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "7FD46554-EFB2-4AE6-9048-649AED523500"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -1317,8 +1301,8 @@
             filePath = "StackApp/ViewModel/HomeTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "loadClosesPrices()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1333,9 +1317,484 @@
             filePath = "StackApp/ViewModel/HomeTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "loadClosesPrices()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DCE9E035-F4E8-4417-B663-E5AF8E5B1C36"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "loadChartExample()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2DE9E328-0C34-42FC-AAC2-490F406D4F4F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/Detail/Chart.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "draw(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2DE9E328-0C34-42FC-AAC2-490F406D4F4F - 2b458c74e8e8a4c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StackApp.ChartView.draw(__C.CGRect) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/Detail/Chart.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1468">
+               </Location>
+               <Location
+                  uuid = "2DE9E328-0C34-42FC-AAC2-490F406D4F4F - 2b458c74e8e8a4c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StackApp.ChartView.draw(__C.CGRect) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/Detail/Chart.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1476">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C7E6A06D-5933-490F-B22D-FB72A80ACE7D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "loadStock(ticker:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E03CC476-D34C-4DAE-98E2-D39FB5A9F456"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "loadStock(ticker:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5E485754-432D-4EE4-A39D-4861B9D84B5B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "loadStock(ticker:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "25A75520-DD28-48C8-858C-7EBB3DFFEF75"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "getHistoricalData(symbol:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5FB02338-C9A6-439B-A664-A1B9D233911F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/Network/Detail/DetailRequestViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "requestHistorical(symbol:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "424E4CEA-4F16-4C66-B9C7-CB498AC3A98D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/Network/Detail/DetailRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "loadHistorical(symbol:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "424E4CEA-4F16-4C66-B9C7-CB498AC3A98D - cf635464bbc8a02f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StackApp.DetailRequest.loadTickers(symbol: Swift.String, completion: (Swift.Array&lt;StackApp.HistoricalModel&gt;, Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Detail/DetailRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "548">
+               </Location>
+               <Location
+                  uuid = "424E4CEA-4F16-4C66-B9C7-CB498AC3A98D - aa20f12b54a11a10"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StackApp.DetailRequest.loadHistorical(symbol: Swift.String, completion: (Swift.Array&lt;StackApp.HistoricalModel&gt;, Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Detail/DetailRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "548">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "03BB334D-4C80-4E98-BFA7-C10816CA0592"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/Network/Detail/DetailRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "loadHistorical(symbol:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "03BB334D-4C80-4E98-BFA7-C10816CA0592 - 1fe1c1b4ffb5fef3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;StackApp.HistoricalModelResponse, Alamofire.AFError&gt;) -&gt; () in StackApp.DetailRequest.loadHistorical(symbol: Swift.String, completion: (Swift.Array&lt;StackApp.HistoricalModel&gt;, Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Detail/DetailRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "240">
+               </Location>
+               <Location
+                  uuid = "03BB334D-4C80-4E98-BFA7-C10816CA0592 - 1fe1c1b4ffb5fef3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;StackApp.HistoricalModelResponse, Alamofire.AFError&gt;) -&gt; () in StackApp.DetailRequest.loadHistorical(symbol: Swift.String, completion: (Swift.Array&lt;StackApp.HistoricalModel&gt;, Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Detail/DetailRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "272">
+               </Location>
+               <Location
+                  uuid = "03BB334D-4C80-4E98-BFA7-C10816CA0592 - 1fe1c1b4ffb5fef3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;StackApp.HistoricalModelResponse, Alamofire.AFError&gt;) -&gt; () in StackApp.DetailRequest.loadHistorical(symbol: Swift.String, completion: (Swift.Array&lt;StackApp.HistoricalModel&gt;, Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Detail/DetailRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "248">
+               </Location>
+               <Location
+                  uuid = "03BB334D-4C80-4E98-BFA7-C10816CA0592 - 1fe1c1b4ffb5fef3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;StackApp.HistoricalModelResponse, Alamofire.AFError&gt;) -&gt; () in StackApp.DetailRequest.loadHistorical(symbol: Swift.String, completion: (Swift.Array&lt;StackApp.HistoricalModel&gt;, Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Detail/DetailRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "03BB334D-4C80-4E98-BFA7-C10816CA0592 - 1fe1c1b4ffb5fef3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;StackApp.HistoricalModelResponse, Alamofire.AFError&gt;) -&gt; () in StackApp.DetailRequest.loadHistorical(symbol: Swift.String, completion: (Swift.Array&lt;StackApp.HistoricalModel&gt;, Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Detail/DetailRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "03BB334D-4C80-4E98-BFA7-C10816CA0592 - 1fe1c1b4ffb5fef3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;StackApp.HistoricalModelResponse, Alamofire.AFError&gt;) -&gt; () in StackApp.DetailRequest.loadHistorical(symbol: Swift.String, completion: (Swift.Array&lt;StackApp.HistoricalModel&gt;, Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Detail/DetailRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "288">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E4FC30BD-47D3-48D9-B71A-6E9BAFC7C39D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/Network/Detail/DetailRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "loadHistorical(symbol:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E4FC30BD-47D3-48D9-B71A-6E9BAFC7C39D - 1fe1c1b4ffb5f8c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;StackApp.HistoricalModelResponse, Alamofire.AFError&gt;) -&gt; () in StackApp.DetailRequest.loadHistorical(symbol: Swift.String, completion: (Swift.Array&lt;StackApp.HistoricalModel&gt;, Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Detail/DetailRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "876">
+               </Location>
+               <Location
+                  uuid = "E4FC30BD-47D3-48D9-B71A-6E9BAFC7C39D - 1fe1c1b4ffb5f8e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;StackApp.HistoricalModelResponse, Alamofire.AFError&gt;) -&gt; () in StackApp.DetailRequest.loadHistorical(symbol: Swift.String, completion: (Swift.Array&lt;StackApp.HistoricalModel&gt;, Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Detail/DetailRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "632">
+               </Location>
+               <Location
+                  uuid = "E4FC30BD-47D3-48D9-B71A-6E9BAFC7C39D - 1fe1c1b4ffb5f8c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;StackApp.HistoricalModelResponse, Alamofire.AFError&gt;) -&gt; () in StackApp.DetailRequest.loadHistorical(symbol: Swift.String, completion: (Swift.Array&lt;StackApp.HistoricalModel&gt;, Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/Network/Detail/DetailRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "632">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "87EBEA69-6D49-4C9C-B2AB-B9859FDC2D18"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/Model/Detail/HistoricalModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "HistoricalModel"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74BD6A9C-598E-4F73-BB1A-6AE5FA813DD2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "getHistoricalData(symbol:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "74BD6A9C-598E-4F73-BB1A-6AE5FA813DD2 - 898f9151180901b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in StackApp.DetailViewController.getHistoricalData(symbol: Swift.String) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/Detail/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "904">
+               </Location>
+               <Location
+                  uuid = "74BD6A9C-598E-4F73-BB1A-6AE5FA813DD2 - 898f9151180901b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in StackApp.DetailViewController.getHistoricalData(symbol: Swift.String) -&gt; ()"
+                  moduleName = "StackApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuarioalquimia/Documents/pruebas/StackApp/StackApp/ViewModel/Detail/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "1032">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "373B39C2-C289-4FC8-9EAC-3E973944F0C6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "loadStock(ticker:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1DBCCBB7-90FF-44B6-B1F7-77AAD93C279C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "loadStock(ticker:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7771881B-83C3-42CF-A78A-9C903C6B2A56"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/Detail/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "hideLoader()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

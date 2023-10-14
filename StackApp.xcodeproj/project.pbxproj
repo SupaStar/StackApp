@@ -33,8 +33,13 @@
 		09F5E8F62AD78DB300D293D2 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8F52AD78DB300D293D2 /* HomeTableViewController.swift */; };
 		09F5E8FA2AD7967D00D293D2 /* TickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8F92AD7967C00D293D2 /* TickerModel.swift */; };
 		09F5E8FD2AD7991B00D293D2 /* TickersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8FC2AD7991B00D293D2 /* TickersRequest.swift */; };
-		09F5E9002AD7A08900D293D2 /* TickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8FF2AD7A08900D293D2 /* TickerViewModel.swift */; };
+		09F5E9002AD7A08900D293D2 /* TickerRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8FF2AD7A08900D293D2 /* TickerRequestViewModel.swift */; };
 		09F5E9032AD7A56200D293D2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 09F5E9022AD7A56200D293D2 /* Alamofire */; };
+		09FC13102ADA1ED20013313B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC130F2ADA1ED20013313B /* DetailViewController.swift */; };
+		09FC13122ADA224B0013313B /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC13112ADA224B0013313B /* Chart.swift */; };
+		09FC13152ADA36650013313B /* DetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC13142ADA36650013313B /* DetailRequest.swift */; };
+		09FC13172ADA36710013313B /* DetailRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC13162ADA36710013313B /* DetailRequestViewModel.swift */; };
+		09FC131B2ADA3BB20013313B /* HistoricalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC131A2ADA3BB20013313B /* HistoricalModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +85,12 @@
 		09F5E8F52AD78DB300D293D2 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		09F5E8F92AD7967C00D293D2 /* TickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerModel.swift; sourceTree = "<group>"; };
 		09F5E8FC2AD7991B00D293D2 /* TickersRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersRequest.swift; sourceTree = "<group>"; };
-		09F5E8FF2AD7A08900D293D2 /* TickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerViewModel.swift; sourceTree = "<group>"; };
+		09F5E8FF2AD7A08900D293D2 /* TickerRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerRequestViewModel.swift; sourceTree = "<group>"; };
+		09FC130F2ADA1ED20013313B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		09FC13112ADA224B0013313B /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		09FC13142ADA36650013313B /* DetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRequest.swift; sourceTree = "<group>"; };
+		09FC13162ADA36710013313B /* DetailRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRequestViewModel.swift; sourceTree = "<group>"; };
+		09FC131A2ADA3BB20013313B /* HistoricalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +208,7 @@
 		09F5E8EA2AD787BB00D293D2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				09FC130E2ADA1E640013313B /* Detail */,
 				09F5E8FE2AD7A07D00D293D2 /* Tickers */,
 				09F5E8B92AD7871600D293D2 /* MainViewController.swift */,
 				09F5E8F52AD78DB300D293D2 /* HomeTableViewController.swift */,
@@ -235,6 +246,7 @@
 		09F5E8F72AD7964900D293D2 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				09FC13132ADA36500013313B /* Detail */,
 				09F5E8FB2AD798E200D293D2 /* Tickers */,
 			);
 			path = Network;
@@ -243,8 +255,8 @@
 		09F5E8F82AD7964F00D293D2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				09F5E8F92AD7967C00D293D2 /* TickerModel.swift */,
-				095074012AD8DADD007DC97A /* TickerClosesModel.swift */,
+				09FC13192ADA384D0013313B /* Detail */,
+				09FC13182ADA38400013313B /* Home */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,7 +264,7 @@
 		09F5E8FB2AD798E200D293D2 /* Tickers */ = {
 			isa = PBXGroup;
 			children = (
-				09F5E8FF2AD7A08900D293D2 /* TickerViewModel.swift */,
+				09F5E8FF2AD7A08900D293D2 /* TickerRequestViewModel.swift */,
 				09F5E8FC2AD7991B00D293D2 /* TickersRequest.swift */,
 			);
 			path = Tickers;
@@ -264,6 +276,41 @@
 				095073F22AD89711007DC97A /* TickerTableViewCell.swift */,
 			);
 			path = Tickers;
+			sourceTree = "<group>";
+		};
+		09FC130E2ADA1E640013313B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				09FC130F2ADA1ED20013313B /* DetailViewController.swift */,
+				09FC13112ADA224B0013313B /* Chart.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		09FC13132ADA36500013313B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				09FC13142ADA36650013313B /* DetailRequest.swift */,
+				09FC13162ADA36710013313B /* DetailRequestViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		09FC13182ADA38400013313B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				09F5E8F92AD7967C00D293D2 /* TickerModel.swift */,
+				095074012AD8DADD007DC97A /* TickerClosesModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		09FC13192ADA384D0013313B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				09FC131A2ADA3BB20013313B /* HistoricalModel.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,18 +460,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				095074042AD8E559007DC97A /* CommonUtils.swift in Sources */,
+				09FC131B2ADA3BB20013313B /* HistoricalModel.swift in Sources */,
 				09F5E8F62AD78DB300D293D2 /* HomeTableViewController.swift in Sources */,
 				09F5E8C02AD7871600D293D2 /* StackApp.xcdatamodeld in Sources */,
 				09F5E8FD2AD7991B00D293D2 /* TickersRequest.swift in Sources */,
 				09F5E8FA2AD7967D00D293D2 /* TickerModel.swift in Sources */,
+				09FC13122ADA224B0013313B /* Chart.swift in Sources */,
 				095073EC2AD86B8B007DC97A /* Loader.swift in Sources */,
 				09F5E8BA2AD7871600D293D2 /* MainViewController.swift in Sources */,
 				095074022AD8DADD007DC97A /* TickerClosesModel.swift in Sources */,
 				09F5E8F42AD78CFE00D293D2 /* Constant.swift in Sources */,
+				09FC13172ADA36710013313B /* DetailRequestViewModel.swift in Sources */,
+				09FC13152ADA36650013313B /* DetailRequest.swift in Sources */,
 				095073F32AD89711007DC97A /* TickerTableViewCell.swift in Sources */,
-				09F5E9002AD7A08900D293D2 /* TickerViewModel.swift in Sources */,
+				09F5E9002AD7A08900D293D2 /* TickerRequestViewModel.swift in Sources */,
 				09F5E8B62AD7871600D293D2 /* AppDelegate.swift in Sources */,
 				09F5E8B82AD7871600D293D2 /* SceneDelegate.swift in Sources */,
+				09FC13102ADA1ED20013313B /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

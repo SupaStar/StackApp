@@ -9,7 +9,7 @@
 
 import Foundation
 
-class TickerViewModel {
+class TickerRequestViewModel {
     //MARK: - Properties
     var tickers: [TickerModel]? {
         didSet { self.didFinishFetch?() }
@@ -28,9 +28,6 @@ class TickerViewModel {
             }
         }
     }
-    var isLoading: Bool = false {
-        didSet { self.updateLoadingStatus?() }
-    }
     
     var showAlertClosure: (() -> ())?
     var updateLoadingStatus: (() -> ())?
@@ -41,14 +38,13 @@ class TickerViewModel {
         self.tickersRequest = dataService
     }
     
+    // MARK: Methods
     func requestTickers(limit: Int = 100, offset: Int = 0){
         self.tickersRequest?.loadTickers(limit: limit, offset: offset,completion: { tickers, errorMessage in
             if errorMessage != "" {
                 self.errorMessage = errorMessage
-                self.isLoading = false
                 return
             }
-            self.isLoading = false
             self.tickers = tickers
         })
     }
@@ -57,10 +53,8 @@ class TickerViewModel {
         self.tickersRequest?.getTickersClose(symbols: symbols, completion: { closes, errorMessage in
             if errorMessage != "" {
                 self.errorMessage = errorMessage
-                self.isLoading = false
                 return
             }
-            self.isLoading = false
             self.tickersCloses = closes
         })
     }
