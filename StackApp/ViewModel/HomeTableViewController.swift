@@ -9,6 +9,7 @@
 
 import UIKit
 import FirebaseAnalytics
+import FirebaseAuth
 
 class HomeTableViewController: UITableViewController {
     
@@ -16,7 +17,7 @@ class HomeTableViewController: UITableViewController {
     var tickerVM: TickerRequestViewModel = TickerRequestViewModel(dataService: TickersRequest())
     var tickers: [TickerModel] = []
     let loader = Loader()
-
+    
     // MARK: Variables
     var numberPetitions = 1
     var limit: Int = 100
@@ -28,9 +29,26 @@ class HomeTableViewController: UITableViewController {
         
         title = "Tickers"
         
+        UserDefaults.standard.set(true, forKey: UserDefaultEnum.logedBefore.rawValue)
+        
         navigationController?.navigationBar.prefersLargeTitles = true
         
+        let signOut = UIBarButtonItem(image: UIImage(systemName: "rectangle.portrait.and.arrow.right.fill"), style: .plain, target: self, action: #selector(closeSession))
+        
+        // Asignar el botón a la barra de navegación
+        self.navigationItem.rightBarButtonItem = signOut
+        
         self.loadTickers()
+    }
+    
+    @objc func closeSession(){
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            performSegue(withIdentifier: "goLogin", sender: self)
+        } catch let signOutError as NSError {
+            print("Error signing out: %@", signOutError)
+        }
     }
     
     @objc func hideLoader(){
@@ -53,7 +71,7 @@ class HomeTableViewController: UITableViewController {
         self.tickerVM.didFinishFetch = {
             self.tickers = self.tickerVM.tickers ?? []
             // MARK: Uncoment if you wish view close prices, this petition spend a lot of credits
-//            self.loadClosesPrices()
+            //            self.loadClosesPrices()
             self.hideLoader()
         }
         self.tickerVM.updateLoadingStatus = {
@@ -165,6 +183,8 @@ class HomeTableViewController: UITableViewController {
             if let destinationVC = segue.destination as? DetailViewController {
                 destinationVC.ticker = selectedTicker
             }
+        } else if segue.identifier == "goLogin" {
+            guard segue.destination is MainViewController else {return}
         }
     }
 }

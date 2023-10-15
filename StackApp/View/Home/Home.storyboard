@@ -49,7 +49,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MMMMMMM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUL-ad-a11">
-                                            <rect key="frame" x="266.66666666666674" y="10" width="86" height="17"/>
+                                            <rect key="frame" x="266.66666666666669" y="10" width="86" height="17"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="86" id="v9a-Gv-fLX"/>
                                                 <constraint firstAttribute="height" constant="17" id="yNZ-Z3-s5S"/>
@@ -59,7 +59,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Close price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDX-8a-3aR">
-                                            <rect key="frame" x="262.66666666666674" y="33" width="90" height="17"/>
+                                            <rect key="frame" x="262.66666666666669" y="33" width="90" height="17"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="90" id="PvS-wq-hB8"/>
                                                 <constraint firstAttribute="height" constant="17" id="zac-Sv-XBl"/>
@@ -69,7 +69,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MMMMMMM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hff-AU-oTC">
-                                            <rect key="frame" x="262.66666666666674" y="56" width="90" height="17"/>
+                                            <rect key="frame" x="262.66666666666669" y="56" width="90" height="17"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="17" id="J9b-fa-BOB"/>
                                                 <constraint firstAttribute="width" constant="90" id="vYQ-nd-yoE"/>
@@ -109,11 +109,22 @@
                     <navigationItem key="navigationItem" id="qfB-cC-vu0"/>
                     <connections>
                         <segue destination="RJb-Pi-ZKk" kind="show" identifier="trackDetail" id="iK3-Pu-P1A"/>
+                        <segue destination="pXp-yM-ftH" kind="show" identifier="goLogin" id="4di-yC-byF"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="neb-AN-Enm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2837.4045801526718" y="-140.14084507042253"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="THy-vw-Mrw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="pXp-yM-ftH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Zj0-uY-xVt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRs-0y-Ktc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3375" y="-515"/>
         </scene>
         <!--Detail-->
         <scene sceneID="R7X-LH-6eY">

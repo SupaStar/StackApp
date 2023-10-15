@@ -69,10 +69,10 @@ class DetailViewController: UIViewController {
         let chartWidth = chartView.frame.width
         let chartX = chartView.frame.minX
         let chartY = chartView.frame.minY
-        let chart = ChartView(frame: CGRect(x: chartX, y: chartY, width: chartWidth, height: chartHeight))
+        let chart = ChartView(frame: CGRect(x: 0, y: 0, width: chartWidth, height: chartHeight))
         chart.x = self.dates
         chart.y = self.yValues
-        view.addSubview(chart)
+        chartView.addSubview(chart)
     }
     
     // MARK: Make the drop down menu
