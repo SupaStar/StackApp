@@ -12,17 +12,17 @@ import UIKit
 class SearchTickerTableViewCell: UITableViewCell {
 
     @IBOutlet weak var limitButton: UIButton!
-    @IBOutlet weak var searchTxt: UITextField!
-    
+    @IBOutlet weak var searchTxt: UISearchBar!
     
     private var debounceTimer: Timer?
     private var options: [OptionPaginateEnum] = [.ten, .twenty, .fifty, .hundred]
     var originVC: HomeTableViewController?
     var limit: Int = OptionPaginateEnum.hundred.rawValue
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        searchTxt.delegate = self
+        self.searchTxt.delegate = self
         
         self.loadFilterOptions()
     }
@@ -68,17 +68,16 @@ class SearchTickerTableViewCell: UITableViewCell {
             search = searchTxt.text
         }
         originVC?.search = search
-        originVC?.loadTickers()
+        originVC?.loadTickers(refresh: true)
     }
 }
-extension SearchTickerTableViewCell: UITextFieldDelegate {
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+extension SearchTickerTableViewCell: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         debounceTimer?.invalidate()
 
         debounceTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { _ in
             self.searchWithDelay()
         }
-
-        return true
     }
 }
+

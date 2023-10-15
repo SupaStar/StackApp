@@ -64,7 +64,7 @@ class HomeTableViewController: UITableViewController {
         })
     }
     
-    func loadTickers(){
+    func loadTickers(refresh: Bool = false){
         if !isLoading {
             loader.show(in: self)
             isLoading = true
@@ -72,7 +72,11 @@ class HomeTableViewController: UITableViewController {
         Analytics.logEvent("Carga de tickers", parameters: ["fecha":"\(Date())"])
         self.tickerVM.requestTickers(limit: self.limit, offset: self.offset, search: self.search)
         self.tickerVM.didFinishFetch = {
-            self.tickers.append(contentsOf: self.tickerVM.tickers ?? []) 
+            if refresh {
+                self.tickers = self.tickerVM.tickers ?? []
+            } else {
+                self.tickers.append(contentsOf: self.tickerVM.tickers ?? [])
+            }
             // MARK: Uncoment if you wish view close prices, this petition spend a lot of credits
             //            self.loadClosesPrices()
             self.hideLoader()
@@ -151,7 +155,7 @@ class HomeTableViewController: UITableViewController {
         let contentHeight = scrollView.contentSize.height
         let screenHeight = scrollView.bounds.height
         
-        if tickers.isEmpty {
+        if tickers.isEmpty || (searchBar?.limit ?? 0) > tickers.count {
             return
         }
         
