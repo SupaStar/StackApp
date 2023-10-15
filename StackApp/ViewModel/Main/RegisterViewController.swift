@@ -41,8 +41,6 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func register(_ sender: Any) {
-        self.closeView()
-        return
         guard let email = emailTxt.text, let password = passwordTxt.text else {
             CommonUtils.alert(message: "Todos los campos son requeridos.", title: "Advertencia", origin: self, delay: 0)
             return

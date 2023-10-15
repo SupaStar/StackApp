@@ -19,7 +19,12 @@ class MainViewController: UIViewController {
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var biometricsBtn: UIButton!
+    @IBOutlet weak var paswordView: UIView!
+    @IBOutlet weak var emailView: UIView!
     
+    @IBOutlet weak var loginBtn: UIButton!
+    
+    @IBOutlet weak var loginGoogleBtn: GIDSignInButton!
     // MARK: INJECTIONS
     let loader = Loader()
     var delay = 0.0
@@ -37,18 +42,27 @@ class MainViewController: UIViewController {
         
         let borderColor = UIColor.lightGray.cgColor
         
-        self.emailTxt.layer.borderWidth = 1.0
-        self.emailTxt.layer.borderColor = borderColor
-        self.emailTxt.layer.cornerRadius = 10
+        //Shadow inputs
+        emailView.layer.borderWidth = 0.5
+        emailView.layer.borderColor = borderColor
+        emailView.layer.cornerRadius = 10
         
-        self.passwordTxt.layer.borderWidth = 1.0
-        self.passwordTxt.layer.borderColor = borderColor
-        self.passwordTxt.layer.cornerRadius = 10
+        paswordView.layer.borderWidth = 0.5
+        paswordView.layer.borderColor = borderColor
+        paswordView.layer.cornerRadius = 10
+        
+        emailTxt.layer.cornerRadius = 10
+        
+        passwordTxt.layer.cornerRadius = 10
+        
+        loginBtn.layer.cornerRadius = 10
+        
+        loginGoogleBtn.layer.cornerRadius = 20
         
         if UserDefaults.standard.string(forKey: UserDefaultEnum.logedBefore.rawValue) != nil {
             let context = LAContext()
             var error: NSError?
-
+            
             if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
                 self.biometricsBtn.isHidden = false
             }
@@ -136,7 +150,7 @@ class MainViewController: UIViewController {
     @IBAction func loginWithBiometrics(_ sender: Any) {
         let context = LAContext()
         var error: NSError?
-
+        
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
             let reason = "Por favor, autentica con Face ID para continuar."
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { (success, error) in
