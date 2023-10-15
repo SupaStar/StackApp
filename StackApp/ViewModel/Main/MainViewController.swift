@@ -86,15 +86,15 @@ class MainViewController: UIViewController {
         loader.show(in: self)
         // Validations
         guard let email = emailTxt.text, let password = passwordTxt.text else {
-            CommonUtils.alert(message: "Todos los campos son requeridos.", title: "Advertencia", origin: self, delay: 0)
+            CommonUtils.alert(message: "Todos los campos son requeridos.", title: "Warning", origin: self, delay: 0)
             return
         }
         if email == "" || password == "" {
-            CommonUtils.alert(message: "Todos los campos son requeridos.", title: "Advertencia", origin: self, delay: 0)
+            CommonUtils.alert(message: "All fields are required.", title: "Warning", origin: self, delay: 0)
             return
         }
         if !email.isValidEmail(){
-            CommonUtils.alert(message: "El email no es valido.", title: "Advertencia", origin: self, delay: 0)
+            CommonUtils.alert(message: "The email is not valid.", title: "Warning", origin: self, delay: 0)
             return
         }
         
@@ -102,7 +102,7 @@ class MainViewController: UIViewController {
             guard let strongSelf = self else { return }
             
             if let error = error {
-                self?.showAlert(message: "\(error.localizedDescription)", title: "Error al loguear")
+                self?.showAlert(message: "\(error.localizedDescription)", title: "Login error")
             }
             strongSelf.goHome()
         }
@@ -157,7 +157,7 @@ class MainViewController: UIViewController {
         var error: NSError?
         
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            let reason = "Por favor, autentica con Face ID para continuar."
+            let reason = "Please authenticate with Face ID to continue."
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { (success, error) in
                 if success {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
@@ -176,7 +176,25 @@ class MainViewController: UIViewController {
         let imageName = self.isHidePass ? "eye.fill" : "eye.slash.fill"
         self.eyeBtn.setImage(UIImage(systemName: imageName, withConfiguration: configurationImage), for: .normal)
         self.passwordTxt.isSecureTextEntry = self.isHidePass
-
+    }
+    
+    @IBAction func resetPassword(_ sender: Any) {
+        guard let email = emailTxt.text else {
+            CommonUtils.alert(message: "An email is required", title: "Warning", origin: self, delay: 0)
+            return
+        }
+        
+        guard email.isValidEmail() else {
+            CommonUtils.alert(message: "The email is not valid.", title: "Warning", origin: self, delay: 0)
+            return
+        }
+        Auth.auth().sendPasswordReset(withEmail: email) { error in
+            if let error = error {
+                CommonUtils.alert(message: error.localizedDescription, title: "Error", origin: self, delay: 0)
+                return
+            }
+            CommonUtils.alert(message: "A password reset email has been sent.", title: "Success.", origin: self, delay: 0)
+        }
     }
 }
 

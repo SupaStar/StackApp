@@ -67,20 +67,20 @@ class RegisterViewController: UIViewController {
     
     @IBAction func register(_ sender: Any) {
         guard let email = emailTxt.text, let password = passwordTxt.text else {
-            CommonUtils.alert(message: "Todos los campos son requeridos.", title: "Advertencia", origin: self, delay: 0)
+            CommonUtils.alert(message: "All fields are required.", title: "Warning", origin: self, delay: 0)
             return
         }
         if email == "" || password == "" {
-            CommonUtils.alert(message: "Todos los campos son requeridos.", title: "Advertencia", origin: self, delay: 0)
+            CommonUtils.alert(message: "All fields are required.", title: "Warning", origin: self, delay: 0)
             return
         }
         if !email.isValidEmail(){
-            CommonUtils.alert(message: "El email no es valido.", title: "Advertencia", origin: self, delay: 0)
+            CommonUtils.alert(message: "The email is not valid.", title: "Warning", origin: self, delay: 0)
             return
         }
         
         if passwordTxt.text != passwordConfirmTxt.text {
-            CommonUtils.alert(message: "Las contraseñas no coinciden.", title: "Advertencia", origin: self, delay: 0)
+            CommonUtils.alert(message: "Passwords do not match.", title: "Warning", origin: self, delay: 0)
             return
         }
         loader.show(in: self)
@@ -94,7 +94,7 @@ class RegisterViewController: UIViewController {
         }
     }
     func closeView(){
-        let alert = UIAlertController(title: "Exito", message: "Usuario creado con exito, inicia sesion.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Success", message: "User created successfully, please log in.", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
             _ = self.navigationController?.popViewController(animated: true)
         }))
