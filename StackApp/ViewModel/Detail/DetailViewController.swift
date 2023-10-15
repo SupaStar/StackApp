@@ -78,8 +78,8 @@ class DetailViewController: UIViewController {
     // MARK: Make the drop down menu
     func loadFilterChartOptions(){
         var optionsArray = [UIAction]()
-        for country in options {
-            let action = UIAction(title: country.rawValue, state: .off, handler: self.changeChart)
+        for option in options {
+            let action = UIAction(title: option.rawValue, state: .off, handler: self.changeChart)
             
             optionsArray.append(action)
         }

@@ -4,6 +4,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
@@ -27,10 +29,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Symbol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6P-Lf-RrI">
-                                            <rect key="frame" x="20" y="10" width="85" height="15"/>
+                                            <rect key="frame" x="20" y="10" width="160" height="15"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="15" id="RwX-wE-ixG"/>
-                                                <constraint firstAttribute="width" constant="85" id="cud-Ah-Mdy"/>
+                                                <constraint firstAttribute="width" constant="160" id="cud-Ah-Mdy"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                             <color key="textColor" systemColor="systemBlueColor"/>
@@ -98,6 +100,53 @@
                                     <outlet property="stockAcronymLbl" destination="vUL-ad-a11" id="kW9-bP-ZLp"/>
                                     <outlet property="stockCountyLbl" destination="hff-AU-oTC" id="mTN-VJ-WxT"/>
                                     <outlet property="symbolLbl" destination="F6P-Lf-RrI" id="ifG-UA-qqb"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchTickerVC" rowHeight="35" id="Kp1-dT-Gv6" customClass="SearchTickerTableViewCell" customModule="StackApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="125" width="393" height="35"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kp1-dT-Gv6" id="adt-WC-xZ7">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="35"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="magnifyingglass.circle.fill" catalog="system" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2gr-Gh-n3m">
+                                            <rect key="frame" x="51" y="0.0" width="269" height="35"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bJh-Ka-Ag5">
+                                            <rect key="frame" x="22" y="3.3333333333333321" width="21" height="28.333333333333336"/>
+                                            <color key="tintColor" name="AccentColor"/>
+                                            <imageReference key="image" image="magnifyingglass.circle.fill" catalog="system" symbolScale="small"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22" scale="medium"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eus-RH-YfF">
+                                            <rect key="frame" x="336" y="0.0" width="41" height="35"/>
+                                            <menu key="menu" id="Gwh-3T-INh">
+                                                <children>
+                                                    <command title="Item 1" id="7cp-LN-BWT"/>
+                                                    <command title="Item 2" id="hNj-EO-YeG"/>
+                                                </children>
+                                            </menu>
+                                            <state key="normal" title="Button"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Eus-RH-YfF" secondAttribute="trailing" constant="16" id="3BR-oP-M5F"/>
+                                        <constraint firstItem="Eus-RH-YfF" firstAttribute="leading" secondItem="2gr-Gh-n3m" secondAttribute="trailing" constant="16" id="8bb-lN-WRF"/>
+                                        <constraint firstItem="2gr-Gh-n3m" firstAttribute="centerY" secondItem="adt-WC-xZ7" secondAttribute="centerY" id="BM0-Ya-hZh"/>
+                                        <constraint firstItem="bJh-Ka-Ag5" firstAttribute="top" secondItem="adt-WC-xZ7" secondAttribute="top" constant="0.66666666666665009" id="BTV-IM-tHd"/>
+                                        <constraint firstItem="2gr-Gh-n3m" firstAttribute="leading" secondItem="bJh-Ka-Ag5" secondAttribute="trailing" constant="8" id="LB8-Yf-tUW"/>
+                                        <constraint firstItem="bJh-Ka-Ag5" firstAttribute="centerY" secondItem="adt-WC-xZ7" secondAttribute="centerY" id="QHv-6v-mUj"/>
+                                        <constraint firstItem="Eus-RH-YfF" firstAttribute="centerY" secondItem="adt-WC-xZ7" secondAttribute="centerY" id="V9y-DM-mzy"/>
+                                        <constraint firstItem="bJh-Ka-Ag5" firstAttribute="leading" secondItem="adt-WC-xZ7" secondAttribute="leading" constant="22" id="gvB-Uk-jbO"/>
+                                        <constraint firstItem="Eus-RH-YfF" firstAttribute="top" secondItem="adt-WC-xZ7" secondAttribute="top" id="mvT-e4-1rM"/>
+                                        <constraint firstItem="2gr-Gh-n3m" firstAttribute="top" secondItem="adt-WC-xZ7" secondAttribute="top" id="t3Q-hS-HaM"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="limitButton" destination="Eus-RH-YfF" id="Alj-dF-XSH"/>
+                                    <outlet property="searchTxt" destination="2gr-Gh-n3m" id="tC6-ef-65H"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -346,14 +395,18 @@
         </scene>
     </scenes>
     <resources>
+        <image name="magnifyingglass.circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

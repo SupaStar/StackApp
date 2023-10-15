@@ -17,12 +17,15 @@ class HomeTableViewController: UITableViewController {
     var tickerVM: TickerRequestViewModel = TickerRequestViewModel(dataService: TickersRequest())
     var tickers: [TickerModel] = []
     let loader = Loader()
+    var searchBar : SearchTickerTableViewCell?
     
     // MARK: Variables
     var numberPetitions = 1
     var limit: Int = 100
     var offset: Int = 0
     var selectedTicker: TickerModel?
+    var search: String?
+    var isLoading: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,25 +54,25 @@ class HomeTableViewController: UITableViewController {
         }
     }
     
-    @objc func hideLoader(){
-        var delayTime = 1.0
-        if self.tickers.count > 100 {
-            delayTime = 1.0
-        }
+    @objc func hideLoader(delayTime: Double = 1.0){
         DispatchQueue.main.asyncAfter(deadline: .now() + delayTime, execute: {
             self.tableView.tableFooterView = nil
             self.tableView.reloadData()
             self.numberPetitions = 0
             self.loader.hide()
+            self.isLoading = false
         })
     }
     
     func loadTickers(){
-        loader.show(in: self)
+        if !isLoading {
+            loader.show(in: self)
+            isLoading = true
+        }
         Analytics.logEvent("Carga de tickers", parameters: ["fecha":"\(Date())"])
-        self.tickerVM.requestTickers(limit: self.limit, offset: self.offset)
+        self.tickerVM.requestTickers(limit: self.limit, offset: self.offset, search: self.search)
         self.tickerVM.didFinishFetch = {
-            self.tickers = self.tickerVM.tickers ?? []
+            self.tickers.append(contentsOf: self.tickerVM.tickers ?? []) 
             // MARK: Uncoment if you wish view close prices, this petition spend a lot of credits
             //            self.loadClosesPrices()
             self.hideLoader()
@@ -119,15 +122,21 @@ class HomeTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if tickers.isEmpty {
+            return 1
+        }
         return tickers.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
-            return UITableViewCell()
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SearchTickerVC", for: indexPath) as! SearchTickerTableViewCell
+            cell.originVC = self
+            self.searchBar = cell
+            return cell
         }
         let cell = tableView.dequeueReusableCell(withIdentifier: "TickerVC", for: indexPath) as! TickerTableViewCell
-        cell.ticker = tickers[indexPath.row]
+        cell.ticker = tickers[indexPath.row - 1]
         return cell
     }
     
@@ -142,18 +151,31 @@ class HomeTableViewController: UITableViewController {
         let contentHeight = scrollView.contentSize.height
         let screenHeight = scrollView.bounds.height
         
+        if tickers.isEmpty {
+            return
+        }
+        
         // If the user reaches the end, it automatically loads new data.
         if offsetY > contentHeight - screenHeight {
             if numberPetitions == 0 {
                 numberPetitions = 1
                 self.tableView.tableFooterView = createSpinnerFooter()
-                limit = limit + 100
-                offset = offset + 100
+                if let searchBar = self.searchBar {
+                    limit = limit + searchBar.limit
+                    offset = offset + searchBar.limit
+                } else {
+                    limit = limit + 100
+                    offset = offset + 100
+                }
                 self.loadTickers()
             }
         }
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            tableView.deselectRow(at: indexPath, animated: true)
+            return
+        }
         let cell = tableView.cellForRow(at: indexPath) as! TickerTableViewCell
         selectedTicker = cell.ticker
         tableView.deselectRow(at: indexPath, animated: true)

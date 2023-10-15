@@ -39,8 +39,8 @@ class TickerRequestViewModel {
     }
     
     // MARK: Methods
-    func requestTickers(limit: Int = 100, offset: Int = 0){
-        self.tickersRequest?.loadTickers(limit: limit, offset: offset,completion: { tickers, errorMessage in
+    func requestTickers(limit: Int = 100, offset: Int = 0, search: String?){
+        self.tickersRequest?.loadTickers(limit: limit, offset: offset, search: search ,completion: { tickers, errorMessage in
             if errorMessage != "" {
                 self.errorMessage = errorMessage
                 return

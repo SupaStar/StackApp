@@ -28,6 +28,8 @@
 		096ACCAB2ADB6BE500B12542 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096ACCAA2ADB6BE500B12542 /* RegisterViewController.swift */; };
 		096ACCAD2ADB85DE00B12542 /* UserDefaultEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096ACCAC2ADB85DE00B12542 /* UserDefaultEnum.swift */; };
 		096B14762ADB1195006496BD /* OptionFilterEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096B14752ADB1195006496BD /* OptionFilterEnum.swift */; };
+		09A629DD2ADC8ED200CFC9E7 /* SearchTickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A629DC2ADC8ED200CFC9E7 /* SearchTickerTableViewCell.swift */; };
+		09A629DF2ADC9B9900CFC9E7 /* OptionPaginateEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A629DE2ADC9B9900CFC9E7 /* OptionPaginateEnum.swift */; };
 		09F5E8B62AD7871600D293D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8B52AD7871600D293D2 /* AppDelegate.swift */; };
 		09F5E8B82AD7871600D293D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8B72AD7871600D293D2 /* SceneDelegate.swift */; };
 		09F5E8BA2AD7871600D293D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8B92AD7871600D293D2 /* MainViewController.swift */; };
@@ -79,6 +81,8 @@
 		096ACCAA2ADB6BE500B12542 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		096ACCAC2ADB85DE00B12542 /* UserDefaultEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultEnum.swift; sourceTree = "<group>"; };
 		096B14752ADB1195006496BD /* OptionFilterEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionFilterEnum.swift; sourceTree = "<group>"; };
+		09A629DC2ADC8ED200CFC9E7 /* SearchTickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTickerTableViewCell.swift; sourceTree = "<group>"; };
+		09A629DE2ADC9B9900CFC9E7 /* OptionPaginateEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionPaginateEnum.swift; sourceTree = "<group>"; };
 		09F5E8B22AD7871600D293D2 /* StackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F5E8B52AD7871600D293D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09F5E8B72AD7871600D293D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 			children = (
 				096B14752ADB1195006496BD /* OptionFilterEnum.swift */,
 				096ACCAC2ADB85DE00B12542 /* UserDefaultEnum.swift */,
+				09A629DE2ADC9B9900CFC9E7 /* OptionPaginateEnum.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				095073F22AD89711007DC97A /* TickerTableViewCell.swift */,
+				09A629DC2ADC8ED200CFC9E7 /* SearchTickerTableViewCell.swift */,
 			);
 			path = Tickers;
 			sourceTree = "<group>";
@@ -522,6 +528,7 @@
 				09F5E8FA2AD7967D00D293D2 /* TickerModel.swift in Sources */,
 				09FC13122ADA224B0013313B /* Chart.swift in Sources */,
 				095073EC2AD86B8B007DC97A /* Loader.swift in Sources */,
+				09A629DD2ADC8ED200CFC9E7 /* SearchTickerTableViewCell.swift in Sources */,
 				09F5E8BA2AD7871600D293D2 /* MainViewController.swift in Sources */,
 				096ACCAB2ADB6BE500B12542 /* RegisterViewController.swift in Sources */,
 				096B14762ADB1195006496BD /* OptionFilterEnum.swift in Sources */,
@@ -530,6 +537,7 @@
 				096ACCA82ADB69EE00B12542 /* StringExtension.swift in Sources */,
 				09FC13172ADA36710013313B /* DetailRequestViewModel.swift in Sources */,
 				09FC13152ADA36650013313B /* DetailRequest.swift in Sources */,
+				09A629DF2ADC9B9900CFC9E7 /* OptionPaginateEnum.swift in Sources */,
 				095073F32AD89711007DC97A /* TickerTableViewCell.swift in Sources */,
 				09F5E9002AD7A08900D293D2 /* TickerRequestViewModel.swift in Sources */,
 				09F5E8B62AD7871600D293D2 /* AppDelegate.swift in Sources */,

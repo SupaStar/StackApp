@@ -12,11 +12,16 @@ import Alamofire
 
 class TickersRequest {
     
-    func loadTickers(limit: Int = 100, offset: Int = 0, completion: @escaping(([TickerModel], String)->Void)){
-        let params = [
+    func loadTickers(limit: Int = 100, offset: Int = 0, search: String?, completion: @escaping(([TickerModel], String)->Void)){
+        var params: [String: String] = [
             "limit": "\(limit)",
             "offset": "\(offset)"
         ]
+
+        if let search = search {
+            params["search"] = search
+        }
+        
         guard let url = makeURL(method: "tickers", parameters: params) else {
             completion([], "Ocurrio un error al crear la url")
             return
@@ -80,4 +85,5 @@ class TickersRequest {
         }
         
     }
+    
 }
