@@ -25,9 +25,13 @@ class MainViewController: UIViewController {
     @IBOutlet weak var loginBtn: UIButton!
     
     @IBOutlet weak var loginGoogleBtn: GIDSignInButton!
+    @IBOutlet weak var eyeBtn: UIButton!
+    
     // MARK: INJECTIONS
     let loader = Loader()
     var delay = 0.0
+    var isHidePass = true
+    let configurationImage = UIImage.SymbolConfiguration(pointSize: 14)
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -58,6 +62,8 @@ class MainViewController: UIViewController {
         loginBtn.layer.cornerRadius = 10
         
         loginGoogleBtn.layer.cornerRadius = 20
+        
+        self.eyeBtn.setImage(UIImage(systemName: "eye.fill", withConfiguration: configurationImage), for: .normal)
         
         if UserDefaults.standard.string(forKey: UserDefaultEnum.logedBefore.rawValue) != nil {
             let context = LAContext()
@@ -165,6 +171,15 @@ class MainViewController: UIViewController {
                 }
             }
         }
+    }
+    @IBAction func showHidePass(_ sender: Any) {
+        self.isHidePass.toggle()
+        if self.isHidePass {
+            self.eyeBtn.setImage(UIImage(systemName: "eye.fill", withConfiguration: configurationImage), for: .normal)
+        } else{
+            self.eyeBtn.setImage(UIImage(systemName: "eye.slash.fill", withConfiguration: configurationImage), for: .normal)
+        }
+        self.passwordTxt.isSecureTextEntry = self.isHidePass
     }
 }
 
