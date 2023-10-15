@@ -19,7 +19,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var biometricsBtn: UIButton!
-    @IBOutlet weak var paswordView: UIView!
+    @IBOutlet weak var passwordView: UIView!
     @IBOutlet weak var emailView: UIView!
     
     @IBOutlet weak var loginBtn: UIButton!
@@ -39,7 +39,6 @@ class MainViewController: UIViewController {
         
         self.setupInputs()
         
-        
     }
     
     func setupInputs(){
@@ -51,9 +50,9 @@ class MainViewController: UIViewController {
         emailView.layer.borderColor = borderColor
         emailView.layer.cornerRadius = 10
         
-        paswordView.layer.borderWidth = 0.5
-        paswordView.layer.borderColor = borderColor
-        paswordView.layer.cornerRadius = 10
+        passwordView.layer.borderWidth = 0.5
+        passwordView.layer.borderColor = borderColor
+        passwordView.layer.cornerRadius = 10
         
         emailTxt.layer.cornerRadius = 10
         
@@ -174,12 +173,10 @@ class MainViewController: UIViewController {
     }
     @IBAction func showHidePass(_ sender: Any) {
         self.isHidePass.toggle()
-        if self.isHidePass {
-            self.eyeBtn.setImage(UIImage(systemName: "eye.fill", withConfiguration: configurationImage), for: .normal)
-        } else{
-            self.eyeBtn.setImage(UIImage(systemName: "eye.slash.fill", withConfiguration: configurationImage), for: .normal)
-        }
+        let imageName = self.isHidePass ? "eye.fill" : "eye.slash.fill"
+        self.eyeBtn.setImage(UIImage(systemName: imageName, withConfiguration: configurationImage), for: .normal)
         self.passwordTxt.isSecureTextEntry = self.isHidePass
+
     }
 }
 

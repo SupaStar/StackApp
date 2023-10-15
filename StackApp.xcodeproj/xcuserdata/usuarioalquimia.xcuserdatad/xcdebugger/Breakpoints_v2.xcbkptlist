@@ -2121,8 +2121,8 @@
             filePath = "StackApp/ViewModel/Main/RegisterViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "closeView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2137,8 +2137,8 @@
             filePath = "StackApp/ViewModel/Main/RegisterViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "closeView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2153,8 +2153,8 @@
             filePath = "StackApp/ViewModel/Main/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "googleSignIn(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2169,8 +2169,8 @@
             filePath = "StackApp/ViewModel/Main/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "googleSignIn(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2185,8 +2185,8 @@
             filePath = "StackApp/ViewModel/Main/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "googleSignIn(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2201,8 +2201,8 @@
             filePath = "StackApp/ViewModel/Main/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
             landmarkName = "googleSignIn(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2217,8 +2217,8 @@
             filePath = "StackApp/ViewModel/Main/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
             landmarkName = "googleSignIn(_:)"
             landmarkType = "7">
             <Locations>
@@ -2265,8 +2265,8 @@
             filePath = "StackApp/ViewModel/Main/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "loginWithEmail(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2281,8 +2281,8 @@
             filePath = "StackApp/ViewModel/Main/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "loginWithEmail(_:)"
             landmarkType = "7">
             <Locations>
@@ -2344,8 +2344,8 @@
             filePath = "StackApp/ViewModel/Main/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "loginWithEmail(_:)"
             landmarkType = "7">
             <Locations>
@@ -2392,8 +2392,8 @@
             filePath = "StackApp/ViewModel/Main/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "loginWithEmail(_:)"
             landmarkType = "7">
             <Locations>
@@ -2440,8 +2440,8 @@
             filePath = "StackApp/ViewModel/Main/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "loginWithEmail(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2456,8 +2456,8 @@
             filePath = "StackApp/ViewModel/Main/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "loginWithEmail(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2466,6 +2466,22 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "802715AA-867B-4522-8E8B-F380FDA981D0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackApp/ViewModel/Main/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "loginWithBiometrics(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6010E56C-7EC8-460F-8983-B09599E26CDE"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -2481,22 +2497,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6010E56C-7EC8-460F-8983-B09599E26CDE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StackApp/ViewModel/Main/MainViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
-            landmarkName = "loginWithBiometrics(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "05E43B85-EC03-4E1A-B2CD-1B0598E33DA5"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -2504,40 +2504,8 @@
             filePath = "StackApp/ViewModel/Main/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "176"
-            endingLineNumber = "176"
-            landmarkName = "showHidePass(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FECB7BB9-6EC6-435B-A3D4-B2B2AECC54E5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StackApp/ViewModel/Main/MainViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "178"
-            endingLineNumber = "178"
-            landmarkName = "showHidePass(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3B61906F-74F9-4E39-AFFB-9603DEC16E59"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StackApp/ViewModel/Main/MainViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
             landmarkName = "showHidePass(_:)"
             landmarkType = "7">
          </BreakpointContent>

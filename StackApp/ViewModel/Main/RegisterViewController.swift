@@ -12,9 +12,23 @@ import FirebaseAuth
 
 class RegisterViewController: UIViewController {
 
+    
     @IBOutlet weak var registerBtn: UIButton!
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var emailTxt: UITextField!
+    @IBOutlet weak var passwordConfirmTxt: UITextField!
+    @IBOutlet weak var emailView: UIView!
+    @IBOutlet weak var passwordConfirmView: UIView!
+    @IBOutlet weak var passwordView: UIView!
+    @IBOutlet weak var showHidePasswordBtn: UIButton!
+    @IBOutlet weak var showHidePasswordConfirmBtn: UIButton!
+    
+    // MARK: INJECTIONS
+    let loader = Loader()
+    let configurationImage = UIImage.SymbolConfiguration(pointSize: 14)
+    var isHidePass = true
+    var isHidePassConfirm = true
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,13 +44,24 @@ class RegisterViewController: UIViewController {
     func setupInputs(){
         
         let borderColor = UIColor.lightGray.cgColor
+        emailView.layer.borderWidth = 0.5
+        emailView.layer.borderColor = borderColor
+        emailView.layer.cornerRadius = 10
         
-        self.emailTxt.layer.borderWidth = 1.0
-        self.emailTxt.layer.borderColor = borderColor
+        passwordView.layer.borderWidth = 0.5
+        passwordView.layer.borderColor = borderColor
+        passwordView.layer.cornerRadius = 10
+        
+        passwordConfirmView.layer.borderWidth = 0.5
+        passwordConfirmView.layer.borderColor = borderColor
+        passwordConfirmView.layer.cornerRadius = 10
+        
+        self.showHidePasswordBtn.setImage(UIImage(systemName: "eye.fill", withConfiguration: configurationImage), for: .normal)
+        
+        self.showHidePasswordConfirmBtn.setImage(UIImage(systemName: "eye.fill", withConfiguration: configurationImage), for: .normal)
+        
         self.emailTxt.layer.cornerRadius = 10
         
-        self.passwordTxt.layer.borderWidth = 1.0
-        self.passwordTxt.layer.borderColor = borderColor
         self.passwordTxt.layer.cornerRadius = 10
     }
     
@@ -54,11 +79,17 @@ class RegisterViewController: UIViewController {
             return
         }
         
+        if passwordTxt.text != passwordConfirmTxt.text {
+            CommonUtils.alert(message: "Las contraseñas no coinciden.", title: "Advertencia", origin: self, delay: 0)
+            return
+        }
+        loader.show(in: self)
         Auth.auth().createUser(withEmail: email, password: password){ authResult, error in
             guard error == nil else {
                 CommonUtils.alert(message: "\(error!.localizedDescription)", title: "Error", origin: self, delay: 0)
                 return
             }
+            self.loader.hide()
             self.closeView()
         }
     }
@@ -68,5 +99,19 @@ class RegisterViewController: UIViewController {
             _ = self.navigationController?.popViewController(animated: true)
         }))
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func showHidePassword(_ sender: Any) {
+        self.isHidePass.toggle()
+        let imageName = self.isHidePass ? "eye.fill" : "eye.slash.fill"
+        self.showHidePasswordBtn.setImage(UIImage(systemName: imageName, withConfiguration: configurationImage), for: .normal)
+        self.passwordTxt.isSecureTextEntry = self.isHidePass
+    }
+    
+    @IBAction func showHidePasswordConfirm(_ sender: Any) {
+        self.isHidePassConfirm.toggle()
+        let imageName = self.isHidePassConfirm ? "eye.fill" : "eye.slash.fill"
+        self.showHidePasswordConfirmBtn.setImage(UIImage(systemName: imageName, withConfiguration: configurationImage), for: .normal)
+        self.passwordConfirmTxt.isSecureTextEntry = self.isHidePassConfirm
     }
 }
