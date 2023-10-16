@@ -11,7 +11,7 @@ import Foundation
 import UIKit
 
 // API
-let apiKey = "37b509e45739dc73e7441465c15f39e6"
+let apiKey = "5c1a32a9a9333347874073c73c82f76c"
 let apiURL = "http://api.marketstack.com/v1/"
 
 func makeURL(method: String, parameters: [String:String]) -> URL? {
