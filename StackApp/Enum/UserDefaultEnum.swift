@@ -11,4 +11,5 @@ import Foundation
 
 enum UserDefaultEnum: String {
     case logedBefore = "logedBefore"
+    case idUser = "idUser"
 }

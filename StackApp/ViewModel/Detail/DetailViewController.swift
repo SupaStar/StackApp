@@ -17,7 +17,8 @@ class DetailViewController: UIViewController {
     let options: [OptionFilterEnum] = [.open, .close, .high, .low, .volume]
     var dates: [String] = []
     var yValues: [Double] = []
-    
+    var user: UserEntity?
+    var isSaved: Bool = false
     // MARK: Components
     @IBOutlet weak var tickerNameLbl: UILabel!
     @IBOutlet weak var tickerSymbolLbl: UILabel!
@@ -35,15 +36,44 @@ class DetailViewController: UIViewController {
     
     // MARK: Injections
     var detailVM: DetailRequestViewModel = DetailRequestViewModel(dataService: DetailRequest())
-    
+    var persistanceS: PersistenceService = PersistenceService()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if let ticker = self.ticker {
             self.loadStock(ticker: ticker)
-        } else{
-            print("regresar")
         }
+        if let id = UserDefaults.standard.string(forKey: UserDefaultEnum.idUser.rawValue) {
+            guard let user = persistanceS.getUser(id: id), let ticker = self.ticker else {
+                return
+            }
+            self.user = user
+            self.isSaved = persistanceS.hasSavedTicker(user: user, name: ticker.name, stockAcron: ticker.stock_exchange.acronym, stockCountry: ticker.stock_exchange.country, symbol: ticker.symbol, stock_name: ticker.stock_exchange.name)
+            let imgName = self.isSaved ? "star.fill" : "star"
+            let save = UIBarButtonItem(image: UIImage(systemName: imgName), style: .plain, target: self, action: #selector(saveFav))
+            
+            // Asignar el botón a la barra de navegación
+            self.navigationItem.rightBarButtonItem = save
+        }
+    }
+    
+    @objc func saveFav(){
+        guard let user = self.user, let ticker = self.ticker else {
+            return
+        }
+        if self.isSaved {
+            persistanceS.deleteTicker(user: user, name: ticker.name, stockAcron: ticker.stock_exchange.acronym, stockCountry: ticker.stock_exchange.country, symbol: ticker.symbol, stock_name: ticker.stock_exchange.name)
+            self.isSaved = false
+        }else{
+            persistanceS.saveTicker(user: user, name: ticker.name, stockAcron: ticker.stock_exchange.acronym, stockCountry: ticker.stock_exchange.country, symbol: ticker.symbol, stock_name: ticker.stock_exchange.name)
+            self.isSaved = true
+        }
+        let imgName = self.isSaved ? "star.fill" : "star"
+        let save = UIBarButtonItem(image: UIImage(systemName: imgName), style: .plain, target: self, action: #selector(saveFav))
+        
+        // Asignar el botón a la barra de navegación
+        self.navigationItem.rightBarButtonItem = save
     }
     
     func changeChart(action: UIAction){
@@ -67,8 +97,6 @@ class DetailViewController: UIViewController {
     func drawChart() {
         let chartHeight = chartView.frame.height
         let chartWidth = chartView.frame.width
-        let chartX = chartView.frame.minX
-        let chartY = chartView.frame.minY
         let chart = ChartView(frame: CGRect(x: 0, y: 0, width: chartWidth, height: chartHeight))
         chart.x = self.dates
         chart.y = self.yValues
@@ -105,11 +133,11 @@ class DetailViewController: UIViewController {
     
     func loadStock(ticker: TickerModel){
         loader.show(in: self)
-        self.tickerNameLbl.text = ticker.name
-        self.tickerSymbolLbl.text = ticker.symbol
+//        self.tickerNameLbl.text = ticker.name
+//        self.tickerSymbolLbl.text = ticker.symbol
         self.exchangeNameLbl.text = ticker.stock_exchange.name
-        self.stockExchangeAcronymLbl.text = ticker.stock_exchange.acronym
-        self.stockExchangeCountryLbl.text = ticker.stock_exchange.country
+//        self.stockExchangeAcronymLbl.text = ticker.stock_exchange.acronym
+//        self.stockExchangeCountryLbl.text = ticker.stock_exchange.country
         getHistoricalData(symbol: ticker.symbol)
         loadChartExample()
     }

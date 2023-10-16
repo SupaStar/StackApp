@@ -30,6 +30,7 @@
 		096B14762ADB1195006496BD /* OptionFilterEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096B14752ADB1195006496BD /* OptionFilterEnum.swift */; };
 		09A629DD2ADC8ED200CFC9E7 /* SearchTickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A629DC2ADC8ED200CFC9E7 /* SearchTickerTableViewCell.swift */; };
 		09A629DF2ADC9B9900CFC9E7 /* OptionPaginateEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A629DE2ADC9B9900CFC9E7 /* OptionPaginateEnum.swift */; };
+		09A629FD2ADCC05600CFC9E7 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A629FC2ADCC05600CFC9E7 /* PersistenceService.swift */; };
 		09F5E8B62AD7871600D293D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8B52AD7871600D293D2 /* AppDelegate.swift */; };
 		09F5E8B82AD7871600D293D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8B72AD7871600D293D2 /* SceneDelegate.swift */; };
 		09F5E8BA2AD7871600D293D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8B92AD7871600D293D2 /* MainViewController.swift */; };
@@ -83,6 +84,7 @@
 		096B14752ADB1195006496BD /* OptionFilterEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionFilterEnum.swift; sourceTree = "<group>"; };
 		09A629DC2ADC8ED200CFC9E7 /* SearchTickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTickerTableViewCell.swift; sourceTree = "<group>"; };
 		09A629DE2ADC9B9900CFC9E7 /* OptionPaginateEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionPaginateEnum.swift; sourceTree = "<group>"; };
+		09A629FC2ADCC05600CFC9E7 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		09F5E8B22AD7871600D293D2 /* StackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F5E8B52AD7871600D293D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09F5E8B72AD7871600D293D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +182,13 @@
 				09A629DE2ADC9B9900CFC9E7 /* OptionPaginateEnum.swift */,
 			);
 			path = Enum;
+			sourceTree = "<group>";
+		};
+		09A629F92ADCBF7500CFC9E7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		09F5E8A92AD7871600D293D2 = {
@@ -291,6 +300,7 @@
 				09F5E8F32AD78CFE00D293D2 /* Constant.swift */,
 				095073EB2AD86B8B007DC97A /* Loader.swift */,
 				095074032AD8E559007DC97A /* CommonUtils.swift */,
+				09A629FC2ADCC05600CFC9E7 /* PersistenceService.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -307,6 +317,7 @@
 		09F5E8F82AD7964F00D293D2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				09A629F92ADCBF7500CFC9E7 /* CoreData */,
 				09FC13192ADA384D0013313B /* Detail */,
 				09FC13182ADA38400013313B /* Home */,
 			);
@@ -524,6 +535,7 @@
 				09FC131B2ADA3BB20013313B /* HistoricalModel.swift in Sources */,
 				09F5E8F62AD78DB300D293D2 /* HomeTableViewController.swift in Sources */,
 				09F5E8C02AD7871600D293D2 /* StackApp.xcdatamodeld in Sources */,
+				09A629FD2ADCC05600CFC9E7 /* PersistenceService.swift in Sources */,
 				09F5E8FD2AD7991B00D293D2 /* TickersRequest.swift in Sources */,
 				09F5E8FA2AD7967D00D293D2 /* TickerModel.swift in Sources */,
 				09FC13122ADA224B0013313B /* Chart.swift in Sources */,

@@ -18,6 +18,7 @@ class HomeTableViewController: UITableViewController {
     var tickers: [TickerModel] = []
     let loader = Loader()
     var searchBar : SearchTickerTableViewCell?
+    var persistanceS: PersistenceService = PersistenceService()
     
     // MARK: Variables
     var numberPetitions = 1
@@ -41,6 +42,13 @@ class HomeTableViewController: UITableViewController {
         // Asignar el botón a la barra de navegación
         self.navigationItem.rightBarButtonItem = signOut
         
+        if let id = UserDefaults.standard.string(forKey: UserDefaultEnum.idUser.rawValue) {
+            let user = persistanceS.getUser(id: id)
+            if user == nil {
+                persistanceS.saveUser(id: id)
+            }
+        }
+                
         self.loadTickers()
     }
     

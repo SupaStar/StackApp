@@ -104,7 +104,7 @@ class MainViewController: UIViewController {
             if let error = error {
                 self?.showAlert(message: "\(error.localizedDescription)", title: "Login error")
             }
-            strongSelf.goHome()
+            strongSelf.goHome(id: authResult?.user.uid ?? "")
         }
         
     }
@@ -137,7 +137,7 @@ class MainViewController: UIViewController {
                                                            accessToken:
                                                             user.accessToken.tokenString)
             Auth.auth().signIn(with: credential)
-            self.goHome()
+            self.goHome(id: user.userID ?? "")
         }
     }
     
@@ -145,7 +145,8 @@ class MainViewController: UIViewController {
         self.performSegue(withIdentifier: "register", sender: self)
     }
     
-    func goHome(){
+    func goHome(id: String){
+        UserDefaults.standard.set(id, forKey: UserDefaultEnum.idUser.rawValue)
         loader.hide()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
             self.performSegue(withIdentifier: "goToHome", sender: self)
