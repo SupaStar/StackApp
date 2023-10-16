@@ -41,6 +41,8 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tabBarController?.tabBar.isHidden = true
+        
         if let ticker = self.ticker {
             self.loadStock(ticker: ticker)
         }
@@ -56,6 +58,10 @@ class DetailViewController: UIViewController {
             // Asignar el botón a la barra de navegación
             self.navigationItem.rightBarButtonItem = save
         }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        tabBarController?.tabBar.isHidden = false
     }
     
     @objc func saveFav(){
@@ -133,13 +139,12 @@ class DetailViewController: UIViewController {
     
     func loadStock(ticker: TickerModel){
         loader.show(in: self)
-//        self.tickerNameLbl.text = ticker.name
-//        self.tickerSymbolLbl.text = ticker.symbol
+        self.tickerNameLbl.text = ticker.name
+        self.tickerSymbolLbl.text = ticker.symbol
         self.exchangeNameLbl.text = ticker.stock_exchange.name
-//        self.stockExchangeAcronymLbl.text = ticker.stock_exchange.acronym
-//        self.stockExchangeCountryLbl.text = ticker.stock_exchange.country
+        self.stockExchangeAcronymLbl.text = ticker.stock_exchange.acronym
+        self.stockExchangeCountryLbl.text = ticker.stock_exchange.country
         getHistoricalData(symbol: ticker.symbol)
-        loadChartExample()
     }
     
     func getHistoricalData(symbol: String){
@@ -156,6 +161,15 @@ class DetailViewController: UIViewController {
                 self.lowPriceLbl.text = "\(today.adj_low)"
                 self.volumeLbl.text = "\(today.adj_volume)"
                 self.loadFilterChartOptions()
+            } else {
+                CommonUtils.alert(message: "No historical data found.", title: "Warning.", origin: self, delay: 1.5)
+                self.dateLbl.isHidden = true
+                self.openPriceLbl.isHidden = true
+                self.closePriceLbl.isHidden = true
+                self.highPriceLbl.isHidden = true
+                self.lowPriceLbl.isHidden = true
+                self.volumeLbl.isHidden = true
+                self.filterMenuBtn.isHidden = true
             }
             self.hideLoader()
         }
@@ -168,25 +182,5 @@ class DetailViewController: UIViewController {
             }
         }
     }
-    
-    func loadChartExample(){
-        //        let barChartView = BarChartView()
-        //        barChartView.frame = CGRect(x: 20, y: 100, width: 300, height: 200)
-        //        view.addSubview(barChartView)
-    }
-    
-    func selectedOption(){
-        
-    }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }

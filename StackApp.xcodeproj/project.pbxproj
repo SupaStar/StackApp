@@ -31,6 +31,7 @@
 		09A629DD2ADC8ED200CFC9E7 /* SearchTickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A629DC2ADC8ED200CFC9E7 /* SearchTickerTableViewCell.swift */; };
 		09A629DF2ADC9B9900CFC9E7 /* OptionPaginateEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A629DE2ADC9B9900CFC9E7 /* OptionPaginateEnum.swift */; };
 		09A629FD2ADCC05600CFC9E7 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A629FC2ADCC05600CFC9E7 /* PersistenceService.swift */; };
+		09A62A0C2ADCD3F000CFC9E7 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A62A0B2ADCD3F000CFC9E7 /* FavoritesTableViewController.swift */; };
 		09F5E8B62AD7871600D293D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8B52AD7871600D293D2 /* AppDelegate.swift */; };
 		09F5E8B82AD7871600D293D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8B72AD7871600D293D2 /* SceneDelegate.swift */; };
 		09F5E8BA2AD7871600D293D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5E8B92AD7871600D293D2 /* MainViewController.swift */; };
@@ -85,6 +86,7 @@
 		09A629DC2ADC8ED200CFC9E7 /* SearchTickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTickerTableViewCell.swift; sourceTree = "<group>"; };
 		09A629DE2ADC9B9900CFC9E7 /* OptionPaginateEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionPaginateEnum.swift; sourceTree = "<group>"; };
 		09A629FC2ADCC05600CFC9E7 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		09A62A0B2ADCD3F000CFC9E7 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		09F5E8B22AD7871600D293D2 /* StackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F5E8B52AD7871600D293D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09F5E8B72AD7871600D293D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +193,14 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		09A62A0A2ADCD39800CFC9E7 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				09A62A0B2ADCD3F000CFC9E7 /* FavoritesTableViewController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
 		09F5E8A92AD7871600D293D2 = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +279,7 @@
 		09F5E8EA2AD787BB00D293D2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				09A62A0A2ADCD39800CFC9E7 /* Favorites */,
 				09FC130E2ADA1E640013313B /* Detail */,
 				09F5E8FE2AD7A07D00D293D2 /* Tickers */,
 				096ACCA92ADB6BD600B12542 /* Main */,
@@ -531,6 +542,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				095074042AD8E559007DC97A /* CommonUtils.swift in Sources */,
+				09A62A0C2ADCD3F000CFC9E7 /* FavoritesTableViewController.swift in Sources */,
 				096ACCAD2ADB85DE00B12542 /* UserDefaultEnum.swift in Sources */,
 				09FC131B2ADA3BB20013313B /* HistoricalModel.swift in Sources */,
 				09F5E8F62AD78DB300D293D2 /* HomeTableViewController.swift in Sources */,

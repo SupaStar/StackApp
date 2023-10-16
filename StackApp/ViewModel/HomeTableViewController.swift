@@ -33,13 +33,12 @@ class HomeTableViewController: UITableViewController {
         
         title = "Tickers"
         
-        UserDefaults.standard.set(true, forKey: UserDefaultEnum.logedBefore.rawValue)
-        
         navigationController?.navigationBar.prefersLargeTitles = true
+
+        UserDefaults.standard.set(true, forKey: UserDefaultEnum.logedBefore.rawValue)
         
         let signOut = UIBarButtonItem(image: UIImage(systemName: "rectangle.portrait.and.arrow.right.fill"), style: .plain, target: self, action: #selector(closeSession))
         
-        // Asignar el botón a la barra de navegación
         self.navigationItem.rightBarButtonItem = signOut
         
         if let id = UserDefaults.standard.string(forKey: UserDefaultEnum.idUser.rawValue) {
@@ -154,7 +153,7 @@ class HomeTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
-            return 30
+            return 60
         }
         return 75
     }
