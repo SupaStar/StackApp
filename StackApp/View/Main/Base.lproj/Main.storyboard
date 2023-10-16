@@ -95,12 +95,12 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qb-Qi-PIg">
-                                <rect key="frame" x="242" y="348.66666666666669" width="119" height="28"/>
+                                <rect key="frame" x="242" y="348.66666666666669" width="135" height="28"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Password forget?">
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
-                                <buttonConfiguration key="configuration" style="plain" title="Password forgot?">
+                                <buttonConfiguration key="configuration" style="plain" title="Password forgot?" titleAlignment="trailing">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                     <color key="baseForegroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
@@ -200,7 +200,7 @@
                             <constraint firstItem="NVf-An-Ebi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Pic-Cc-cco"/>
                             <constraint firstItem="qWK-78-uRH" firstAttribute="top" secondItem="6t7-Br-eer" secondAttribute="bottom" constant="52.333333333333258" id="QwP-Qz-EyT"/>
                             <constraint firstItem="6t7-Br-eer" firstAttribute="top" secondItem="dmb-dc-hzS" secondAttribute="bottom" constant="40" id="TLN-bZ-gYh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3Qb-Qi-PIg" secondAttribute="trailing" id="Ti2-el-39G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="3Qb-Qi-PIg" secondAttribute="trailing" constant="16" id="Ti2-el-39G"/>
                             <constraint firstItem="6t7-Br-eer" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="a1V-oj-VjE"/>
                             <constraint firstItem="NVf-An-Ebi" firstAttribute="top" secondItem="xaq-I5-dSZ" secondAttribute="bottom" constant="48" id="aat-7A-3uv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M99-2e-dCu" secondAttribute="trailing" constant="32" id="bOq-2X-Zfs"/>
