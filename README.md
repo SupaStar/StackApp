@@ -28,3 +28,4 @@ Reglas de desarrollo
    - Ten en cuenta que el consumo de los precios de cierre de las acciones en el índice está desactivado por defecto debido a limitaciones de peticiones. 
    - Si deseas habilitar esta función, descomenta la función `loadClosesPrices` y comenta la función `hideLoader`. Estas funciones se encuentran dentro de la función `loadTickers`.
    - Si te llegas a acabar las peticiones, puedes cambiar tu APIKey en el archivo constant dentro de la carpeta Utilities
+
