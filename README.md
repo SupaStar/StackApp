@@ -18,10 +18,15 @@ Reglas de desarrollo
  - ** 1.- cmd + A (Para seleccionar todo)**
  - ** 2.- ctrl + I (Para indentar)**
  
+## Tests
+- Acerca de los test, realmente tengo nula experiencia con ellos, los que hice, los realice con ayuda con de tutoriales y documentacion de las funciones que considere mas primordiales :(
+
+ 
 ## Requisitos
 
 - Swift 16.0 o superior
 - Xcode 15.0 o superior (ya que es la version en la que se genero la app)
+- Una vez descargado el proyecto, esperar a que se descarguen los paquetes de dependencias, ya que son necesarios en ciertos modulos
 
 **Importante:**
 

@@ -193,7 +193,7 @@ class HomeTableViewController: UITableViewController {
         performSegue(withIdentifier: "trackDetail", sender: self)
     }
     // Make the spinner for the end of the table
-    private func createSpinnerFooter() -> UIView {
+    func createSpinnerFooter() -> UIView {
         let footerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 100))
         
         let spinner = UIActivityIndicatorView()
