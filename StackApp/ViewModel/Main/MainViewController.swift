@@ -124,6 +124,7 @@ class MainViewController: UIViewController {
         // Start the sign in flow!
         GIDSignIn.sharedInstance.signIn(withPresenting: self) { [unowned self] result, error in
             guard error == nil else {
+                loader.hide()
                 return
             }
             

@@ -35,8 +35,13 @@ class RegisterViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = false
         
         self.setupInputs()
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+            view.addGestureRecognizer(tapGesture)
     }
-    
+    @objc func hideKeyboard() {
+        view.endEditing(true)
+    }
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
     }
